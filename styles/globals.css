@@ -1,3 +1,6 @@
+/* Importing Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +15,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-bold font-Inter
   }
 
   h1 {
@@ -21,6 +24,10 @@
 
   h2 {
     @apply text-3xl sm:text-4xl
+  }
+
+  p {
+    @apply font-sourceSansPro
   }
 
   li {
