@@ -31,3 +31,71 @@
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#7f96bb] to-[#567CB8] text-[#343437]
   }
 }
+
+/* CUSTOM STYLING FOR MY NAVIGATION MENU */
+
+/* Styling the checkbox for the dropdown menu */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 10px;
+  position: relative;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent
+}
+
+.header .menu-icon .hamburger {
+  background: #343437;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 25px;
+}
+
+.header .menu-icon .hamburger:before,
+.header .menu-icon .hamburger:after {
+  background: #343437;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .hamburger:before {
+  top: 7px;
+}
+
+.header .menu-icon .hamburger:after {
+  top: -7px;
+}
+
+/* Styling the hamburger menu itself */
+
+.header .dropdown-button {
+  display: none;
+}
+
+.header .dropdown-button:checked~.menu {
+  max-height: 240px;
+}
+
+.header .dropdown-button:checked~.menu-icon .hamburger {
+  background: transparent;
+}
+
+.header .dropdown-button:checked~.menu-icon .hamburger:before {
+  transform: rotate(-45deg);
+}
+
+.header .dropdown-button:checked~.menu-icon .hamburger:after {
+  transform: rotate(45deg);
+}
+
+.header .dropdown-button:checked~.menu-icon:not(.steps) .hamburger:before,
+.header .dropdown-button:checked~.menu-icon:not(.steps) .hamburger:after {
+  top: 0;
+}
