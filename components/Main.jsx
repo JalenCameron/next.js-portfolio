@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div className='w-full h-screen'>
+    <section className='w-full h-screen'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <h1 className='text-xl sm:text-2xl lg:text-4xl'>Hi, I&apos;m</h1>
@@ -11,7 +11,7 @@ const Main = () => {
                 <p className='uppercase text-lg tracking-widest py-4 lg:text-2xl'>Front-End Web Developer</p>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

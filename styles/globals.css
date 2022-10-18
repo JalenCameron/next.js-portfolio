@@ -123,3 +123,9 @@
     width: 100%;
   }
 }
+
+/* BORDER FADE IN (ABOUT ME) */
+.about-me {
+  -webkit-animation: fadein 2.5s;
+  animation: fadein 2.5s;
+}
