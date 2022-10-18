@@ -42,7 +42,6 @@
 /* CUSTOM STYLING FOR MY NAVIGATION MENU */
 
 /* Styling the checkbox for the dropdown menu */
-
 .header .menu-icon {
   cursor: pointer;
   float: right;
@@ -81,7 +80,6 @@
 }
 
 /* Styling the hamburger menu itself */
-
 .header .dropdown-button {
   display: none;
 }
@@ -108,8 +106,6 @@
 }
 
 /* HORIZONTAL LINE ANIMATION */
-
-/* Styling for the line itself */
 .horizontal-line {
   height: 0px;
   width: 1px;
@@ -124,6 +120,6 @@
 
 @keyframes increase {
   100% {
-    width: 270px;
+    width: 100%;
   }
 }
