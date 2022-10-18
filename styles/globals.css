@@ -106,3 +106,24 @@
 .header .dropdown-button:checked~.menu-icon:not(.steps) .hamburger:after {
   top: 0;
 }
+
+/* HORIZONTAL LINE ANIMATION */
+
+/* Styling for the line itself */
+.horizontal-line {
+  height: 0px;
+  width: 1px;
+  border-bottom: 2px solid #7f96bb;
+
+  -webkit-animation: increase 3s;
+  -moz-animation: increase 3s;
+  -o-animation: increase 3s;
+  animation: increase 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+  100% {
+    width: 270px;
+  }
+}

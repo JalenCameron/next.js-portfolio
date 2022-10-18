@@ -5,8 +5,10 @@ const Main = () => {
     <div className='w-full h-screen'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
-                <h1 className='py-4'>Hi, I&apos;m</h1>
-                <p className='uppercase text-lg tracking-widest text-[#7f96bb]'>Front-End Web Developer</p>
+                <h1 className='text-xl sm:text-2xl lg:text-4xl'>Hi, I&apos;m</h1>
+                <h1 className='text-[#7f96bb] text-4xl sm:text-5xl lg:text-8xl py-4'>Jalen Cameron</h1>
+                <div className='horizontal-line'></div>
+                <p className='uppercase text-lg tracking-widest'>Front-End Web Developer</p>
             </div>
         </div>
     </div>
