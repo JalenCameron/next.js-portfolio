@@ -17,7 +17,9 @@ const Navbar = () => {
     <header className='shadow-md w-full fixed top-0 left-0'>
         <nav className='header md:flex items-center justify-between bg-[#f1f3f4] py-4 md:px-10 px-7'>
             <div className='cursor-pointer'>
-                <Image src="/assets/logo-black.png" alt="The letter J being used as an Icon" width="50" height="47" />
+                <Link href={"./"}>
+                    <Image src="/assets/logo-black.png" alt="The letter J being used as an Icon" width="35" height="35" />
+                </Link>
             </div>
 
             <div className='text-4xl absolute right-4 top-[0.7rem] cursor-pointer md:hidden'>
@@ -32,7 +34,7 @@ const Navbar = () => {
                     Links.map((link) => (
                         <li key={link.name} className="md:ml-8 text-3xl md:text-xl md:my-0 my-7">
                             <Link href={link.link}>
-                                <a alt={`${link.name} Page`} className="hover:text-[#7f96bb] duration-300">{link.name}</a>
+                                <a alt={`${link.name} Page`} className="cool duration-300">{link.name}</a>
                             </Link>
                         </li>
                     ))
