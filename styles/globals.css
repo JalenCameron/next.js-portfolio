@@ -172,3 +172,20 @@ a:after {
   position: absolute;
   transition: transform 0.5s ease;
 }
+
+/* TABS STYLING */
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #7f96bb;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background: #7f96bb;
+}
+
+button {
+  --tw-shadow-colored: none;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: center;
+}
