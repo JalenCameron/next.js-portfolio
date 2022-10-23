@@ -6,10 +6,10 @@ import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import { data } from "../data";
 import { useState } from "react";
 import Design from "../../components/Design";
+import Developer from "../../components/Developer";
 
 function Works() {
   // TAB STUFF
@@ -73,9 +73,7 @@ function Works() {
             </span>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <span>
-              <h2 className="text-base">{data[1].title}</h2>
-            </span>
+            <Developer />
           </TabPanel>
           <TabPanel value={value} index={2}>
             <Design />

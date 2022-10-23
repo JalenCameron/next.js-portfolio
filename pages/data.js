@@ -1,7 +1,7 @@
 export const data = [
   {
     title: "Nomi",
-    tools: "Next, SASS, Adobe XD, Adobe Photoshop",
+    tools: "Next · SASS · Adobe XD · Adobe Photoshop",
     overview:
       "Nomi is an interactive web application that allows users to browse and track their favourite movies based on ratings, popularity or release date.",
     github: "",
@@ -16,7 +16,7 @@ export const data = [
   },
   {
     title: "Weather App",
-    tools: "Next, Tailwind, Adobe XD",
+    tools: "Next · Tailwind · Adobe XD",
     overview:
       "A Weather Application that utilizes an API Key to fetch short-term forecasts for over 200,000 known cities in the world.",
     github: "",
@@ -31,8 +31,8 @@ export const data = [
   },
   {
     title: "Tic Tac Toe",
-    tools: "React, CSS",
-    overview: "",
+    tools: "React · CSS",
+    overview: "An interactive game built with React and basic CSS styling",
     github: "",
     liveserver: "",
     timeline: "",
