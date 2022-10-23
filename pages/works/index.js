@@ -10,6 +10,7 @@ import { data } from "../data";
 import { useState } from "react";
 import Design from "../../components/Design";
 import Developer from "../../components/Developer";
+import Everything from "../../components/Everything";
 
 function Works() {
   // TAB STUFF
@@ -68,9 +69,7 @@ function Works() {
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <span>
-              <h2 className="text-base">{data[0].title}</h2>
-            </span>
+            <Everything />
           </TabPanel>
           <TabPanel value={value} index={1}>
             <Developer />

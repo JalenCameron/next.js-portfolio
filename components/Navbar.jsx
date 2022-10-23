@@ -22,7 +22,7 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <div className='text-4xl absolute right-4 top-[0.7rem] cursor-pointer md:hidden'>
+            <div className='text-4xl absolute right-4 top-[0.3rem] cursor-pointer md:hidden'>
                 <input className="dropdown-button" type="checkbox" id="dropdown-button" onClick={() => setOpen(!open)} />
                 <label className="menu-icon" htmlFor="dropdown-button">
                     <span className="hamburger"></span>
