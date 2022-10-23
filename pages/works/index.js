@@ -9,6 +9,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import { data } from "../data";
 import { useState } from "react";
+import Design from "../../components/Design";
 
 function Works() {
   // TAB STUFF
@@ -23,7 +24,7 @@ function Works() {
         aria-labelledby={`simple-tab-${index}`}
         {...other}
       >
-        {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+        {value === index && <Box className="py-4">{children}</Box>}
       </div>
     );
   }
@@ -51,9 +52,9 @@ function Works() {
     <div>
       <Navbar />
 
-      <main className="z-[-1] my-40 mx-[12px] max-w-[1000px] p-5 lg:mx-auto">
+      <main className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto">
         <h1 className="text-center text-2xl">Featured Works</h1>
-        <Box sx={{ width: "100%", bgcolor: "#f1f3f4" }} className="pt-4">
+        <Box sx={{ bgcolor: "#f1f3f4" }} className="mx-auto pt-4">
           <Box sx={{ width: "100%", bgcolor: "#f1f3f4" }} className="pt-4">
             <Tabs
               value={value}
@@ -77,9 +78,7 @@ function Works() {
             </span>
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <span>
-              <h2 className="text-base">{data[3].title}</h2>
-            </span>
+            <Design />
           </TabPanel>
         </Box>
       </main>

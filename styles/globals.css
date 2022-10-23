@@ -26,6 +26,10 @@
     @apply text-3xl sm:text-4xl
   }
 
+  h3 {
+    @apply text-2xl sm:text-3xl
+  }
+
   p {
     @apply font-sourceSansPro
   }
@@ -174,12 +178,12 @@ a:after {
 }
 
 /* TABS STYLING */
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+.MuiTabs-flexContainer .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #7f96bb;
 }
 
-.css-1aquho2-MuiTabs-indicator {
-  background: #7f96bb;
+.MuiTabs-scroller .css-1aquho2-MuiTabs-indicator {
+  background-color: #7f96bb;
 }
 
 button {
@@ -188,4 +192,18 @@ button {
 
 .css-heg063-MuiTabs-flexContainer {
   justify-content: center;
+}
+
+/* PROJECT CONTAINER STYLING */
+.container {
+  -webkit-animation: fadein 2.5s;
+  animation: fadein 2.5s;
+}
+
+.see-more {
+  transition: all .2s ease;
+}
+
+.project-info {
+  transition: transform .3s ease-in-out;
 }

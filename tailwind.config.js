@@ -10,6 +10,10 @@ module.exports = {
         sourceSansPro: ["Source Sans Pro", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
       },
+      screens: {
+        cs: "950px",
+        rsp: "555px",
+      },
     },
   },
   plugins: [],
