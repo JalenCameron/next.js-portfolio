@@ -12,7 +12,10 @@ export const data = [
     development: "",
     takeaway: "",
     dev: "dev",
-    design: "design",
+    designer: "design",
+    project: "nomi",
+    danial: "Danial",
+    reilly: "Reilly",
   },
   {
     title: "Weather App",
@@ -27,7 +30,8 @@ export const data = [
     development: "",
     takeaway: "",
     dev: "dev",
-    design: "design",
+    designer: "design",
+    project: "weather-app",
   },
   {
     title: "Tic Tac Toe",
@@ -41,7 +45,8 @@ export const data = [
     development: "",
     takeaway: "",
     dev: "dev",
-    design: "design",
+    designer: "design",
+    project: "tic-tac-toe",
   },
   {
     title: "Portfolio Project",
@@ -56,7 +61,8 @@ export const data = [
     development: "",
     takeaway: "",
     dev: "dev",
-    design: "design",
+    designer: "design",
+    project: "portfolio",
   },
   {
     title: "Summer Panda Cafe",
@@ -71,6 +77,7 @@ export const data = [
     development: "",
     takeaway: "",
     dev: "dev",
-    design: "design",
+    designer: "design",
+    project: "capstone",
   },
 ];

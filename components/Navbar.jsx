@@ -3,15 +3,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+
 const Navbar = () => {
-    let Links = [
+    const Links = [
         {name:"Home", link:"./"},
         {name:"About", link:"./about"},
         {name:"Works", link:"./works"},
         {name:"Contact", link:"./contact"},
     ]
     // Creating an Open state in order to have my Navigation menu dynamically appear
-    let [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
   return (
     <header className='shadow-md w-full fixed top-0 left-0'>
