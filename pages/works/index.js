@@ -6,11 +6,12 @@ import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import { data } from "../data";
 import { useState } from "react";
-import Design from "../../components/Design";
-import Developer from "../../components/Developer";
-import Everything from "../../components/Everything";
+import Capstone from "../../components/Capstone";
+import Nomi from "../../components/Nomi";
+import Weather from "../../components/Weather";
+import TicTacToe from "../../components/TicTacToe";
+import MyPortolio from "../../components/MyPortolio";
 
 function Works() {
   // TAB STUFF
@@ -69,13 +70,23 @@ function Works() {
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <Everything />
+            <Capstone />
+            <Nomi />
+            <Weather />
+            <TicTacToe />
+            <MyPortolio />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Developer />
+            <Nomi />
+            <Weather />
+            <TicTacToe />
+            <MyPortolio />
+            <Capstone />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <Design />
+            <MyPortolio />
+            <Nomi />
+            <Weather />
           </TabPanel>
         </Box>
       </main>
