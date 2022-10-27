@@ -14,7 +14,7 @@ import TicTacToe from "../components/TicTacToe";
 import MyPortolio from "../components/MyPortolio";
 
 function Works() {
-  // TAB STUFF
+  // TAB RELATED INFORMATION (TAKEN FROM MATERIAL UI)
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -61,7 +61,7 @@ function Works() {
             <Tabs
               value={value}
               onChange={handleChange}
-              aria-label="basic tabs example"
+              aria-label="Tabs to sort through Design, Development and Takeaways"
               variant="scrollable"
             >
               <Tab label="All" {...a11yProps(0)} />

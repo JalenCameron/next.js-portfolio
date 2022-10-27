@@ -22,7 +22,7 @@ function MyPortolio() {
                     <div className='project-info'>
                         <h3 className='my-3 mr-1'>{data[3].title}</h3>
                         <p className='my-2 font-bold'>{data[3].tools}</p>
-                        <p>{data[3].overview}</p>
+                        <p>{data[3].description}</p>
                     </div>
                 </div>
             </div>

@@ -22,7 +22,7 @@ function TicTacToe() {
                     <div className='project-info'>
                         <h3 className='my-3 mr-1'>{data[2].title}</h3>
                         <p className='my-2 font-bold'>{data[2].tools}</p>
-                        <p>{data[2].overview}</p>
+                        <p>{data[2].description}</p>
                     </div>
                 </div>
             </div>

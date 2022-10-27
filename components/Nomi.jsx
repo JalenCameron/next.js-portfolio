@@ -22,7 +22,7 @@ function Nomi() {
                     <div className='project-info'>
                         <h3 className='my-3 mr-1'>{data[0].title}</h3>
                         <p className='my-2 font-bold'>{data[0].tools}</p>
-                        <p>{data[0].overview}</p>
+                        <p>{data[0].description}</p>
                     </div>
                 </div>
             </div>

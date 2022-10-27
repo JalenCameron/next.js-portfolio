@@ -22,7 +22,7 @@ function Weather() {
                     <div className='project-info'>
                         <h3 className='my-3 mr-1'>{data[1].title}</h3>
                         <p className='my-2 font-bold'>{data[1].tools}</p>
-                        <p>{data[1].overview}</p>
+                        <p>{data[1].description}</p>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,6 @@ const Navbar = () => {
         {name:"Home", link:"./"},
         {name:"About", link:"./about"},
         {name:"Works", link:"./works"},
-        {name:"Contact", link:"./contact"},
     ]
     // Creating an Open state in order to have my Navigation menu dynamically appear
     const [open, setOpen] = useState(false);
