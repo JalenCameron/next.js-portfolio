@@ -1,17 +1,17 @@
 import Link from "next/link";
 import React from "react";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
-import Capstone from "../../components/Capstone";
-import Nomi from "../../components/Nomi";
-import Weather from "../../components/Weather";
-import TicTacToe from "../../components/TicTacToe";
-import MyPortolio from "../../components/MyPortolio";
+import Capstone from "../components/Capstone";
+import Nomi from "../components/Nomi";
+import Weather from "../components/Weather";
+import TicTacToe from "../components/TicTacToe";
+import MyPortolio from "../components/MyPortolio";
 
 function Works() {
   // TAB STUFF
