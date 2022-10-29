@@ -6,7 +6,7 @@ import Weather from './Weather';
 function Featured() {
   return (
     <div>
-        <section className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto text-center">
+        <section className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto">
             <h2 className='font-bold'>Featured Works</h2>
             <Nomi />
             <Weather />

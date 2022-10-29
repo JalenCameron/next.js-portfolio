@@ -2,12 +2,36 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { data } from '../pages/data';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 function MyPortolio() {
+    {/* Using usInView to trigger a built in function that lets the page know when the element is on screen */}
+    const {ref, inView} = useInView({
+        threshold: 0.2
+    });
+    {/* useAnimation allows me to add transition types */}
+    const animation = useAnimation();
+    {/* useEffect then allows me to activate the animation every time the element scrolls into view */}
+    useEffect(() => {
+        console.log("useEffect hook, inView = ", inView)
+        if(inView) {
+            animation.start({
+                x: 0,
+                transition: {
+                    type: 'slide', duration: 1.5, bounce: 0.3
+                }
+            })
+        } else if(!inView) {
+            animation.start({x: '-100vw'})
+        }
+    })
+
   return (
-    <div>
+    <div ref={ref}>
          {/* MY PORTFOLIO */}
-        <section>
+        <motion.section animate={animation}>
             <div className='container max-w-4xl my-8 p-5 border-2 border-opacity-40 border-solid border-[#7f96bb] md:flex'>
                 <div className='max-w-md md:w-full rsp:m-auto'>
                     <Image src="/assets/portfolio.png" alt="Jalen Cameron's Portfolio" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' />
@@ -26,7 +50,7 @@ function MyPortolio() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     </div>
   )
 }
