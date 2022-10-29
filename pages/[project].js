@@ -9,6 +9,9 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
+import Contact from "../components/Contact";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 /* Using the getStaticPaths() function to tell Next.js to render the pages defined in paths. This function always returns the object, which would be the data that I've mapped through and turned into string results. */
 export async function getStaticPaths() {
@@ -76,8 +79,8 @@ function Project(props) {
     <div>
       <Navbar />
 
-      <main className="mx-auto max-w-5xl px-5 pt-24">
-        <h1 className="mt-6 text-center text-3xl">{props.post.title}</h1>
+      <main className="mx-auto max-w-[50rem] px-5 pt-24">
+        <h1 className="mt-6 text-center text-4xl">{props.post.title}</h1>
 
         <div className="text-center">
           <Image
@@ -149,17 +152,116 @@ function Project(props) {
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <h1>Yo</h1>
+            {/* Design Paragraph 1 */}
+            <p className="py-4">{props.post.designParagraph1}</p>
+            {/* Design Image 1 */}
+            {props.post.designImage1 && (
+              <div className="text-center">
+                <Image
+                  src={props.post.designImage1}
+                  alt={props.post.desAlt1}
+                  width={550}
+                  height={400}
+                  className="h-auto max-w-[250px]"
+                />
+              </div>
+            )}
+            {/* Design Paragraph 2 */}
+            {props.post.designParagraph2 && (
+              <p className="py-4">{props.post.designParagraph2}</p>
+            )}
+            {/* Design Image 2 */}
+            {props.post.designImage2 && (
+              <div className="text-center">
+                <Image
+                  src={props.post.designImage2}
+                  alt={props.post.desAlt2}
+                  width={550}
+                  height={400}
+                  className="h-auto max-w-[250px]"
+                />
+              </div>
+            )}
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <h1>Hey</h1>
+            {/* Developer Paragraph 1 */}
+            <p className="py-4">{props.post.devParagraph1}</p>
+            {/* Developer Image 1*/}
+            {props.post.devImage1 && (
+              <div className="text-center">
+                <Image
+                  src={props.post.devImage1}
+                  alt={props.post.devAlt1}
+                  width={550}
+                  height={400}
+                  className="h-auto max-w-[250px]"
+                />
+              </div>
+            )}
+            {/* Developer Codeblock 1 */}
+            {props.post.codeblock && (
+              <figure>
+                <SyntaxHighlighter
+                  language="javascript"
+                  style={a11yDark}
+                  customStyle={{
+                    borderRadius: "5px",
+                    backgroundColor: "#001E3C",
+                  }}
+                >
+                  {props.post.codeblock}
+                </SyntaxHighlighter>
+                <figcaption className="mx-auto mb-8 max-w-2xl pt-2">
+                  {props.post.figcaption}
+                </figcaption>
+              </figure>
+            )}
+            {/* Developer Paragraph 2 */}
+            {props.post.devParagraph2 && (
+              <p className="py-4">{props.post.devParagraph2}</p>
+            )}
+            {/* Developer Codeblock 2 */}
+            {props.post.codeblock2 && (
+              <figure>
+                <SyntaxHighlighter
+                  language="javascript"
+                  style={a11yDark}
+                  customStyle={{
+                    borderRadius: "5px",
+                    backgroundColor: "#001E3C",
+                  }}
+                >
+                  {props.post.codeblock2}
+                </SyntaxHighlighter>
+                <figcaption className="mx-auto mb-8 max-w-2xl pt-2">
+                  {props.post.figcaption}
+                </figcaption>
+              </figure>
+            )}
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <h1>Hello</h1>
+            {/* Takeaway 1 */}
+            <p className="py-4">{props.post.takeaway1}</p>
+            {/* Takeaway Image */}
+            {props.post.takeawayImage && (
+              <div className="text-center">
+                <Image
+                  src={props.post.takeawayImage}
+                  alt={props.post.takeawayAlt}
+                  width={550}
+                  height={400}
+                  className="h-auto max-w-[250px]"
+                />
+              </div>
+            )}
+            {/* Takeaway 2 */}
+            {props.post.takeaway2 && (
+              <p className="py-4">{props.post.takeaway2}</p>
+            )}
           </TabPanel>
         </Box>
       </main>
-
+      <Contact />
       <Footer />
     </div>
   );

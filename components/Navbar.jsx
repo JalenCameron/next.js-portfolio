@@ -7,8 +7,8 @@ import { useState } from 'react';
 const Navbar = () => {
     const Links = [
         {name:"Home", link:"./"},
-        {name:"About", link:"./about"},
         {name:"Works", link:"./works"},
+        {name:"About", link:"./about"},
     ]
     // Creating an Open state in order to have my Navigation menu dynamically appear
     const [open, setOpen] = useState(false);

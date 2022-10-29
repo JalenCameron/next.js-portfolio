@@ -1,13 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import {
-  SiJavascript,
-  SiHtml5,
-  SiJquery,
-  SiReact,
-  SiNextdotjs,
-} from "react-icons/si";
 
 function About() {
   const Emoji = (props) => (
@@ -27,7 +20,7 @@ function About() {
 
       <main className="about-me relative z-[-1] my-40 mx-[12px] max-w-[1000px] border-[3px] border-solid border-[#7f96bb] border-opacity-40 p-5 lg:mx-auto">
         <h1 className="absolute top-[-1.5rem] left-0 right-0 mx-auto max-w-xl bg-[#f1f3f4] text-center">
-          Hi <Emoji label="sheep" symbol="👋🏽" /> I&apos;m Jalen
+          Hi <Emoji label="wave" symbol="👋🏽" /> I&apos;m Jalen
         </h1>
 
         <section className="mx-auto py-8 px-5 shadow-lg lg:max-w-2xl lg:p-8">
