@@ -35,9 +35,9 @@ function Nomi() {
         <motion.section animate={animation}>
             <div className='container max-w-4xl my-8 p-5 border-2 border-opacity-40 border-solid border-[#7f96bb] md:flex'>
                 <div className='max-w-md md:w-full rsp:m-auto'>
-                    <Image src="/assets/nomi-movies.png" alt="Nomi Movie Database" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' />
+                    <Image src="/assets/nomi-db.png" alt="Nomi Movie Database" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' />
                 </div>
-                <div className='relative w-full p-4 cs:ml-[20px]'>
+                <article className='relative w-full p-4 cs:ml-[20px]'>
                     <Link href={`/${data[0].id}`}>
                         <a className='see-more fl:float-right mt-4 flex relative'>
                             <p className='relative font-bold tracking-wide'>See More</p>
@@ -49,7 +49,7 @@ function Nomi() {
                         <p className='my-2 font-bold'>{data[0].tools}</p>
                         <p>{data[0].description}</p>
                     </div>
-                </div>
+                </article>
             </div>
         </motion.section>
     </div>

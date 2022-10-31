@@ -79,7 +79,7 @@ function Project(props) {
     <div>
       <Navbar />
 
-      <main className="mx-auto max-w-[50rem] px-5 pt-24">
+      <main className="mx-auto max-w-[52rem] px-5 pt-24">
         <h1 className="mt-6 text-center text-4xl">{props.post.title}</h1>
 
         <div className="text-center">
