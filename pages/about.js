@@ -26,7 +26,7 @@ function About() {
         <section className="mx-auto py-8 px-5 shadow-lg lg:max-w-2xl lg:p-8">
           <p className="py-2">
             Growing up I&apos;ve always had a strong interest in technology.
-            From editing YouTube videos with Sony Vegas Pro, to creating blog
+            From editing YouTube videos with Sony Vegas Pro to creating blog
             posts on <i>piczo.com</i> (does anyone remember this site?),
             I&apos;ve always tried to immerse myself with whatever technological
             applications were offered at the time. That being said, it
@@ -36,10 +36,10 @@ function About() {
 
           <p className="py-2">
             With solid fundamentals in various Front-End programming languages
-            such as Next.js and jQuery I&apos;m competent at building dynamic
-            and fully responsive sites. I&apos;m also very capable of creating
-            high quality user-centered designs thanks to my proficiency with
-            such tools as Adobe XD, Figma and Tailwind.
+            such as React and PhP I&apos;m competent at building dynamic and
+            fully responsive sites. I&apos;m also very capable of creating high
+            quality user-centered designs thanks to my proficiency with such
+            tools as Adobe XD, Figma and Tailwind.
           </p>
 
           <p className="py-2">

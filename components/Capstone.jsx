@@ -9,7 +9,8 @@ import { useEffect } from "react";
 function Capstone() {
     {/* Using usInView to trigger a built in function that lets the page know when the element is on screen */}
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.2,
+        triggerOnce: true
     });
     {/* useAnimation allows me to add transition types */}
     const animation = useAnimation();

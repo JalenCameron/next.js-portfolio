@@ -9,7 +9,8 @@ import { useEffect } from "react";
 function Weather() {
     {/* Using usInView to trigger a built in function that lets the page know when the element is on screen */}
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.2,
+        triggerOnce: true
     });
     {/* useAnimation allows me to add transition types */}
     const animation = useAnimation();
@@ -20,7 +21,7 @@ function Weather() {
             animation.start({
                 x: 0,
                 transition: {
-                    type: 'slide', duration: 1.5, bounce: 0.3
+                    type: 'slide', duration: 2, bounce: 0.3
                 }
             })
         } else if(!inView) {
