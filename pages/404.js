@@ -9,7 +9,7 @@ function fourZeroFour() {
       <Navbar />
 
       {/* Thanks to https://codepen.io/tsotsoblotso/pen/mVMvVv for the idea */}
-      <main className="code-area z-[-1] m-auto w-[95%] py-1 pr-1 pl-8">
+      <main className="code-area m-auto w-[95%] py-1 pr-1 pl-8">
         <span className="block py-4 italic text-[#7f96bb]">
           {"// 404 page not found."}
         </span>

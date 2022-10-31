@@ -14,7 +14,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
   return (
-    <header className='shadow-md w-full fixed top-0 left-0'>
+    <header className='shadow-md w-full fixed top-0 left-0 z-10'>
         <nav className='header md:flex items-center justify-between bg-[#f1f3f4] py-4 md:px-10 px-7'>
             <div className='cursor-pointer'>
                 <Link href={"./"}>
