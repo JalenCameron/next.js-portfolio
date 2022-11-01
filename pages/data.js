@@ -14,20 +14,20 @@ export const data = [
     timeline: "5 Weeks",
     roles: "UI Designer · Developer · Debugger",
     designParagraph1:
-      "I approached the design of this movie mockup with the idea that I wanted a clean and uncluttered interface, only displaying the movie poster at first. Hovering over the poster itself on Desktop would provide the essential movie information, while clicking on the poster would take you to the individual movie page.",
+      "These mockups were created using Adobe Photoshop and XD, keeping a mobile-first approach in mind. I wanted to maintain well documented folder groups as well to show UI changes in response to various user interactions",
     designParagraph2:
-      "These mockups were created using Adobe Photoshop and XD,  keeping a mobile-first approach in mind. I also maintained well documented folder groups to show UI changes in response to various user interactions",
+      "As for the design of this project, I approached it with the idea that I wanted a clean and uncluttered interface that only displays the movie poster at first. Hovering over the poster itself on Desktop would provide some movie information, while clicking on the poster would take you to the individual movie page with additional info.",
     devParagraph1:
-      "After completion of the high fidelity mockups, my teammates and I split up the workload and decided to begin working on the development of the app itself. Two focused mainly on functionality and two focused on design (there was still some overlap in between). For this particular assignment I was tasked with styling the App’s UI, but did keep an eye on the development of certain features as well in case of any bugs or errors. ",
+      "After completion of the high fidelity mockups, my teammates and I split up the workload and decided to begin working on the development of the app itself. Two focused mainly on functionality and two focused on design (fortunately there was still some overlap in between). For this particular assignment I was tasked with styling the App’s UI, but did keep an eye on the development of certain features as well in case of any bugs or errors. ",
     takeaway1:
-      "This was the first project where I had to work in a team environment and use React.js as the main framework. While I didn’t write a lot of the code myself, I was still able to see the in’s and out’s of making API calls, as well as using components to provide extra functionality for a better interactive website. For example, it was quite interesting seeing how the data was fetched for both the movie information and cast list, and then implemented in combination with styling and conditional rendering (e.g., &&).",
+      "This was the first project where I had to work in a team environment and use React.js as the main framework. I was able to see the in’s and out’s of making API calls, as well as using components to provide extra functionality for a better interactive website. Personally, it was quite interesting seeing how the data was fetched for both the movie information and cast list, and then implemented in combination with styling and conditional rendering (e.g., &&).",
     takeaway2:
-      "Another takeaway I would like to highlight was communication between the team. Overall we did a good job discussing issues and how we could better optimize the site, yet we still came across a few merge conflicts throughout the process, so I think it’s definitely something we could have improved upon over time. It was also good to get used to using GitHub in general, as well as communication platforms such as Slack.",
-    designImage1: "/assets/nomi-hover.png",
-    desAlt1: "Movie List displaying the hover effect I wanted to use",
-    designImage2: "/assets/nomi-folders.png",
-    desAlt2:
+      "Communication between the team is also something I would like to highlight. Overall we did a good job discussing issues and how we could better optimize the site, yet we still came across a few merge conflicts and functional issues throughout the process. I think it’s definitely something we could have improved upon over time. It was also good to get used to using GitHub in general, as well as communication platforms such as Slack.",
+    designImage1: "/assets/nomi-folders.png",
+    desAlt1:
       "The folder structure I used when building a Mockup for my Movie Database in Photoshop",
+    designImage2: "/assets/nomi-hover.png",
+    desAlt2: "Movie List displaying the hover effect I wanted to use",
     codeblock: ` {/* Banner section with the movie title and basic stats  */}
     {movie.title && (
       <section className="hero">
@@ -59,7 +59,7 @@ export const data = [
       </section>
     )}`,
     figcaption:
-      "For example, understanding what this conditional statement was rendering allowed me to apply appropriate styling (e.g., width & height).",
+      "For example, understanding what this conditional statement was rendering allowed me to apply appropriate styling (e.g., width & height, where to place the ratings).",
   },
   {
     title: "Weather App",
@@ -67,7 +67,7 @@ export const data = [
     description:
       "A Weather Application that utilizes an API Key to fetch short-term forecasts for over 200,000 known cities in the world.",
     overview:
-      "This Weather Application utilizes an API Key (from openweathermap.com) to fetch short-term forecasts for over 200,000 known cities in the world. The user can search for city and be provided with the current temperature and description, as well as the sunrise and sunset in Pacific Standard Time. The background images, taken from Unsplash, are dynamically generated based on what the weather is like for the day.",
+      "This Weather Application utilizes an API Key (from openweathermap.com) to fetch short-term forecasts for over 200,000 known cities in the world. The user can search for a city and be provided with the current temperature and description, as well as the sunrise and sunset in Pacific Standard Time. The background images, taken from Unsplash, are dynamically generated based on what the weather is like for the day.",
     id: "2",
     image: "/assets/weather-mockup.png",
     alt: "A Weather Application that pulls data from an API and provides realtime forecasts",
@@ -76,11 +76,11 @@ export const data = [
     timeline: "1 Week",
     roles: "UI Designer · Front-End Developer",
     designParagraph1:
-      "My goal for this website was to maintain a simple layout, and utilize Unsplash’s free image library in order to provide backdrops in relation to the current weather. I actually needed a bit more time than I initially anticipated to find images that worked. This was due to how many different sub-categories there are aside from the usual rain and sun (i.e., Mist and Thunderstorms), and also because a lot of images would be distorted due to screen size.",
+      "My goal for this website was to maintain a simple layout, and utilize Unsplash’s free image library in order to provide backdrops in relation to the current weather. I actually needed a bit more time than I initially anticipated to find images that worked. This was due to how many different sub-categories there are that describe the weather aside from the sun, rain, cloudy, etc. I also had to take into account that some images could be distorted due to screen size, so it was a very 'trial and error' type of process.",
     devParagraph1:
-      "After creating the Movie Database Project I wanted to explore making API calls on my own. This project in particular was created following a tutorial online, although I did modify the code to make it my own. To start, it did involve researching some of the terms used and the syntax involved. This allowed me to understand what I was writing out, and where I could look for <i>improvements<i>. For instance, I wrote out a conditional statement to change the background depending on which weather icon was displayed, and I also applied those same principles towards displaying a greeting when there was no information currently rendered.",
+      "After creating the Movie Database Project I wanted to explore making API calls on my own. This project in particular was created following a tutorial online, although I did modify the code to make it my own. To start, it did involve researching some of the terms used and the syntax involved. This allowed me to understand what I was writing out, and where I could look for improvements. For instance, I wrote out a conditional statement to change the background depending on which weather icon was displayed, and I also applied those same principles towards displaying a greeting when there was no information currently rendered.",
     takeaway1:
-      "This was a very fun project to bring to life, and it was also a great way for me to familiarize myself with Next.js and Tailwind. I was able to practice how to access data from props (which was initially a tricky concept for me to grasp having had very limited knowledge of React prior to this project). I actually found out that using Axios to make HTTP requests was more useful than just a regular Fetch API. It was a lot less work writing out <i>.get()<i> or <i>.then()<i>, and there was no need to convert my request to a JSON string either. I was also able to get a handle on the syntax for a new styling framework called Tailwind. ",
+      "This was a very fun project to bring to life, and it was also a great way for me to familiarize myself with Next.js and Tailwind. I was able to practice how to access data from props (which was initially a tricky concept for me to grasp having had very limited knowledge of React prior to this project). I actually found out that using Axios to make HTTP requests was more useful than just a regular Fetch API. It was a lot less work writing out .get() or .then(), and there was no need to convert my request to a JSON string either. I was also able to get a handle on the syntax for a new styling framework called Tailwind. ",
     designImage1: "/assets/weather-bg.png",
     desAlt1:
       "A dynamic background is generated depending on the Weather Code provided when you search for a city",
@@ -105,7 +105,7 @@ export const data = [
     tools: "React · CSS",
     description: "An interactive game built with React and basic CSS styling",
     overview:
-      "For those that may not be familiar with the game the objective is to get three matching X's or O's in a row, and is best played between two users. This was built through React.js and simple CSS styling",
+      "For those that may not be familiar with the game, Tic Tac Toe is a two-player game in which the players fill up nine empty rectangles in a table with either an X or an O when it is their turn. If someone gets three in a row (either vertically, horizontally or diagonally) that player wins. Honestly, I figured this would be a good way to familiarize myself with the basics of JavaScript while creating a simple and interesting project.",
     id: "3",
     image: "/assets/game-mockup.png",
     alt: "A fun game of Tic Tac Toe built with React.js and CSS",
@@ -116,9 +116,9 @@ export const data = [
     designParagraph1:
       "To maintain the theme of the game, I wanted to implement a grid container and have three rows of three. The grid needed to be clickable to allow for players to place down their associated piece (either X or O).  As for the players themselves, I simply applied a font and colour scheme to give them their own unique style",
     devParagraph1:
-      "This game was built with some basic front-end syntax, and uses simple logic to complete some validation checks. For the same player to be considered the winner, the values entered in the array are <i>indexes<i> for the squares that need to be populated by the same player. The for Loop allows me to check whether there’s a match or not, while the roundDraw variable simply checks whether the board is filled or not.",
+      "This game was built with some basic front-end syntax, and uses simple logic to complete some validation checks. The For Loop will look through each square and check whether the gameState matches with an array of Winning Conditions I set up ealier, while the roundDraw variable simply checks whether the board is filled or not.",
     takeaway1:
-      "Building this game was a good way for me to improve my skills with JavaScript. I had to think of each step that a player would take, and the functions that would allow the game to flow from one step to another. Initially I figured it would be easy to create this project, but I found out fairly quickly that that was not the case. The handleResults() function was not easy to do and required some extra logic (and help online) in order to come up with the best solution. I think if I were to revisit this game in the future I’d want to try again without the help of outside resources. I’d also want to add a bit more functionality, for example an Input for Player names. Or a scoreboard.",
+      "This project was a lot of fun to build. I had to think of each step that a player would take, and the functions that would allow the game to flow from one step to another. Initially I figured it would be easy to create this project, but I found out fairly quickly that that was not the case. The handleResults() function was not easy to do and required some extra logic (and help online) in order to come up with the best solution. I think if I were to revisit this game in the future I’d want to try again without the help of outside resources. I’d also want to add a bit more functionality, for example an Input for Player names. Or a scoreboard.",
     designImage1: "/assets/game-grid.png",
     desAlt1: "A photo displaying the grid and styling I used for the game",
     devImage1: "",
@@ -183,9 +183,9 @@ export const data = [
     devParagraph2:
       "I also wanted more practice with React components and Tailwind, as I knew these would make things easier for the overall build time of my portfolio. For example, having my Navigation Bar built as a component let me maintain consistency across each page I created on my site. Using Tailwind CSS I could also style every element accordingly within that component, as opposed to attaching a className and adding styles to a stylesheet. ",
     takeaway1:
-      "This portfolio was a great way for me to see how far I’ve come in terms of both design and development. As someone who had very little knowledge of website creation in general, it was very satisfying being able to look at what I came up with and say “I know how to code that”, “I know how to improve that”, etc. I’m also grateful for having come up with a style guide, content plan and information architecture, because initially I struggled to decide on how I wanted to represent myself and the work I’ve done but having that structure allowed me to focus more on the work and not backtrack on my decisions.",
+      "This portfolio was a great way for me to see how far I’ve come in terms of both design and development. As someone who had very little knowledge of website creation in general, it was very satisfying being able to look at what I came up with and say “I know how to build that now.” While I still have room for improvement, overall my journey has been very fulfilling. I’m also grateful for having come up with a style guide, content plan and information architecture, because initially I struggled to decide on how I wanted to represent myself and the work I’ve done but having that structure allowed me to focus more on the work and not backtrack on my decisions.",
     takeaway2:
-      "As for the development itself, I really enjoyed trying to figure out the dynamic routing and linking that page to the data file I created. It’s something I definitely want to improve on, as I had to look online and get help from my colleagues on the best way to approach it.  Overall though, I’m proud of the work I put in and it’s been a rewarding experience for sure.",
+      "As for the development itself, I really enjoyed trying to figure out dynamic routing and linking that page to the data file I created. It’s something I definitely want to improve on, as I had to look online and get help from my colleagues on the best way to approach it. I've always been one to keep looking for ways to better myself, and this experience has been no different. I hope I can continue to grow and expand my portfolio in the years to come.",
     designImage1: "/assets/style-guide.png",
     desAlt1:
       "A section of my style guide, where I determined my primary and secondary colours",

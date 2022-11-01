@@ -27,7 +27,7 @@ function About() {
           <p className="py-2">
             Growing up I&apos;ve always had a strong interest in technology.
             From editing YouTube videos with Sony Vegas Pro to creating blog
-            posts on <i>piczo.com</i> (does anyone remember this site?),
+            posts on <em>piczo.com</em> (does anyone remember this site?),
             I&apos;ve always tried to immerse myself with whatever technological
             applications were offered at the time. That being said, it
             wasn&apos;t until 2022 where I really started to take notice of web
@@ -77,7 +77,7 @@ function About() {
             <div className="py-2">
               <p>
                 <b>
-                  <i>Front-End Web Developer Certificate</i>
+                  <em>Front-End Web Developer Certificate</em>
                 </b>
               </p>
               <p>BCIT | May 2022 - November 2022</p>
@@ -86,7 +86,7 @@ function About() {
             <div className="py-2">
               <p>
                 <b>
-                  <i>Bachelor of Linguistics Program</i>
+                  <em>Bachelor of Linguistics Program</em>
                 </b>
               </p>
               <p>SFU | September 2018 - December 2021</p>

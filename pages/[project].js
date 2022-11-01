@@ -11,7 +11,7 @@ import Tab from "@mui/material/Tab";
 import { useState } from "react";
 import Contact from "../components/Contact";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 /* Using the getStaticPaths() function to tell Next.js to render the pages defined in paths. This function always returns the object, which would be the data that I've mapped through and turned into string results. */
 export async function getStaticPaths() {
@@ -95,12 +95,12 @@ function Project(props) {
         {/* PROJECT LINKS */}
         <section className="mx-auto flex w-72 justify-evenly">
           <Link href={props.post.github}>
-            <a className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb]">
+            <a className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]">
               GitHub
             </a>
           </Link>
           <Link href={props.post.liveSite}>
-            <a className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb]">
+            <a className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]">
               Live Site
             </a>
           </Link>
@@ -203,7 +203,7 @@ function Project(props) {
               <figure>
                 <SyntaxHighlighter
                   language="javascript"
-                  style={a11yDark}
+                  style={nightOwl}
                   customStyle={{
                     borderRadius: "5px",
                     backgroundColor: "#001E3C",
@@ -225,7 +225,7 @@ function Project(props) {
               <figure>
                 <SyntaxHighlighter
                   language="javascript"
-                  style={a11yDark}
+                  style={nightOwl}
                   customStyle={{
                     borderRadius: "5px",
                     backgroundColor: "#001E3C",
