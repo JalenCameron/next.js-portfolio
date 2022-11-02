@@ -16,7 +16,7 @@ function Nomi() {
     const animation = useAnimation();
     {/* useEffect then allows me to activate the animation every time the element scrolls into view */}
     useEffect(() => {
-        console.log("useEffect hook, inView = ", inView)
+        // console.log("useEffect hook, inView = ", inView)
         if(inView) {
             animation.start({
                 x: 0,
