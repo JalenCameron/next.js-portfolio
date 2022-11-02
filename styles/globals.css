@@ -178,19 +178,19 @@ a:after {
 }
 
 /* TABS STYLING */
-.MuiTabs-flexContainer .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+/* .MuiTabs-flexContainer .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #7f96bb;
-}
+} */
 /* Material UI not rendering Server Side so hopefully this class fixes it */
-.css-1q2h7u5.Mui-selected {
+.css-k008qs .css-1q2h7u5.Mui-selected {
   color: #7f96bb;
 }
 
-.MuiTabs-scroller .css-1aquho2-MuiTabs-indicator {
+/* .MuiTabs-scroller .css-1aquho2-MuiTabs-indicator {
   background-color: #7f96bb;
-}
+} */
 /* Material UI not rendering Server Side so hopefully this class fixes it */
-.css-ttwr4n {
+.MuiTabs-scroller .css-ttwr4n {
   background-color: #7f96bb;
 }
 
