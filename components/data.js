@@ -219,10 +219,10 @@ export const data = [
     devParagraph1: "Currently in progress and will be updated when finished!",
     takeaway1: "Currently in progress and will be updated when finished!",
     designImage1: "",
-    desAlt1: "",
+    desAlt1: "Currently in progress and will be updated when finished!",
     devImage1: "",
-    devAlt1: "",
+    devAlt1: "Currently in progress and will be updated when finished!",
     codeblock: ``,
-    figcaption: "",
+    figcaption: "Currently in progress and will be updated when finished!",
   },
 ];
