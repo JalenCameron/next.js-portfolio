@@ -10,7 +10,7 @@ export const data = [
     image: "/assets/nomi-mockup.png",
     alt: "An interactive Movie Database built with Next.js and Sass",
     github: "https://github.com/JedBorseth/movie-database",
-    liveSite: "jalencameron.com/movie-database",
+    liveSite: "/movie-database",
     timeline: "5 Weeks",
     roles: "UI Designer · Developer · Debugger",
     designParagraph1:
@@ -72,7 +72,7 @@ export const data = [
     image: "/assets/weather-mockup.png",
     alt: "A Weather Application that pulls data from an API and provides realtime forecasts",
     github: "https://github.com/JalenCameron/Weather-Application",
-    liveSite: "jalencameron.com/weather-app",
+    liveSite: "/weather-app",
     timeline: "1 Week",
     roles: "UI Designer · Front-End Developer",
     designParagraph1:
@@ -110,7 +110,7 @@ export const data = [
     image: "/assets/game-mockup.png",
     alt: "A fun game of Tic Tac Toe built with React.js and CSS",
     github: "https://github.com/JalenCameron/Vanilla-JavaScript-Tic-Tac-Toe",
-    liveSite: "jalencameron.com/tic-tac-toe",
+    liveSite: "/tic-tac-toe",
     timeline: "2 Days",
     roles: "UI Designer · Front-End Developer",
     designParagraph1:
@@ -171,7 +171,7 @@ export const data = [
     image: "/assets/portfolio-mockup.png",
     alt: "Jalen Cameron's Portfolio Project",
     github: "https://github.com/JalenCameron/next.js-portfolio",
-    liveSite: "jalencameron.com",
+    liveSite: "/",
     timeline: "2 Weeks",
     roles: "Front-End Developer · UI Designer",
     designParagraph1:
@@ -211,7 +211,7 @@ export const data = [
     image: "/assets/coming-soon-mockup.png",
     alt: "A Cafe website built through PHP, WordPress and Sass",
     github: "https://github.com/htpwebdesign/panda-cafe",
-    liveSite: "jalencameron.com/capstone",
+    liveSite: "/capstone",
     timeline: "4 Weeks",
     roles: "Front-End Developer · Debugger",
     designParagraph1:

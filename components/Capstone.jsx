@@ -21,7 +21,7 @@ function Capstone() {
             animation.start({
                 x: 0,
                 transition: {
-                    type: 'slide', duration: 1.5, bounce: 0.3
+                    type: 'slide', duration: 1.4, bounce: 0.3
                 }
             })
         } else if(!inView) {

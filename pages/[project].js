@@ -95,12 +95,18 @@ function Project(props) {
         {/* PROJECT LINKS */}
         <section className="mx-auto flex w-72 justify-evenly">
           <Link href={props.post.github}>
-            <a className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]">
+            <a
+              target="_blank"
+              className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
+            >
               GitHub
             </a>
           </Link>
           <Link href={props.post.liveSite}>
-            <a className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]">
+            <a
+              target="_blank"
+              className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
+            >
               Live Site
             </a>
           </Link>
