@@ -29,7 +29,7 @@ const Navbar = () => {
                 </label>
             </div>
 
-            <ul className={`menu md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#f1f3f4] md:z-auto z-[-1] left-0 right-0 text-center w-full md:w-auto pl-0 transition-all duration-[400ms] ease-in ${open ? 'top-20 opacity-100' : 'top-[-490px]'} md:opacity-100`}>
+            <ul className={`menu md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#f1f3f4] md:z-auto z-[-1] left-0 right-0 text-center w-full md:w-auto pl-0 transition-all duration-[400ms] ease-in ${open ? 'top-16 opacity-100' : 'top-[-490px]'} md:opacity-100`}>
                 {
                     Links.map((link) => (
                         <li key={link.name} className="md:ml-8 text-3xl md:text-xl md:my-0 my-7 bg-[#f1f3f4] ">
