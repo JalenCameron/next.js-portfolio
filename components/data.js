@@ -103,7 +103,8 @@ export const data = [
   {
     title: "Tic Tac Toe",
     tools: "React · CSS",
-    description: "An interactive game built with React and basic CSS styling",
+    description:
+      "An interactive game built with JavaScript and basic CSS styling",
     overview:
       "For those that may not be familiar with the game, Tic Tac Toe is a two-player game in which the players fill up nine empty rectangles in a table with either an X or an O when it is their turn. If someone gets three in a row (either vertically, horizontally or diagonally) that player wins. Honestly, I figured this would be a good way to familiarize myself with the basics of JavaScript while creating a simple and interesting project.",
     id: "3",
