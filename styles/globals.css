@@ -230,3 +230,42 @@ button {
 .project-info {
   transition: transform .3s ease-in-out;
 }
+
+/* CAROUSEL ANIMATION */
+@keyframes carousel {
+  0% {
+    bottom: 0%
+  }
+
+  30% {
+    bottom: 0%
+  }
+
+  33% {
+    bottom: 100%
+  }
+
+  63% {
+    bottom: 100%
+  }
+
+  66% {
+    bottom: 200%
+  }
+
+  97% {
+    bottom: 200%
+  }
+
+  100% {
+    bottom: 0%
+  }
+}
+
+.carousel-mover {
+  animation: carousel linear 10s infinite;
+}
+
+.carousel-mover:hover {
+  animation-play-state: paused;
+}
