@@ -7,7 +7,7 @@ function Featured() {
   return (
     <div>
         <section className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto">
-            <h2 className='font-bold text-center'>Featured Works</h2>
+            <h2 className='font-bold text-center'>Featured Work</h2>
             <Nomi />
             <Weather />
             <Capstone />

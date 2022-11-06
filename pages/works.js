@@ -52,10 +52,10 @@ function Works() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar highlighted="Work" />
 
       <main className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto">
-        <h1 className="text-center text-2xl">Featured Works</h1>
+        <h1 className="text-center text-2xl">Featured Work</h1>
         <Box sx={{ bgcolor: "#f1f3f4" }} className="mx-auto pt-4">
           <Box sx={{ width: "100%", bgcolor: "#f1f3f4" }} className="pt-4">
             <Tabs

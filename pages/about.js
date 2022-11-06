@@ -16,7 +16,7 @@ function About() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar highlighted="About" />
 
       <main className="about-me relative my-40 mx-[12px] max-w-[1000px] border-[3px] border-solid border-[#7f96bb] border-opacity-40 p-5 lg:mx-auto">
         <h1 className="absolute top-[-1.5rem] left-0 right-0 mx-auto max-w-xl bg-[#f1f3f4] text-center">

@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 
-const Navbar = () => {
+const Navbar = ({ highlighted }) => {
     const Links = [
         {name:"Home", link:"./"},
-        {name:"Works", link:"./works"},
+        {name:"Work", link:"./works"},
         {name:"About", link:"./about"},
     ]
     // Creating an Open state in order to have my Navigation menu dynamically appear
@@ -34,7 +34,9 @@ const Navbar = () => {
                     Links.map((link) => (
                         <li key={link.name} className="md:ml-8 text-3xl md:text-xl md:my-0 my-7 bg-[#f1f3f4] ">
                             <Link href={link.link}>
-                                <a className="cool duration-300">{link.name}</a>
+                                <a className={highlighted === link.name ? "highlighted duration-300" : "cool duration-300"}>
+                                    {link.name}
+                                </a>
                             </Link>
                         </li>
                     ))

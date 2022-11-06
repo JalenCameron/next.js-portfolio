@@ -269,3 +269,8 @@ button {
 .carousel-mover:hover {
   animation-play-state: paused;
 }
+
+/* HIGHLIGHTING CURRENT PAGE */
+.highlighted {
+  border-bottom: 2px solid #7f96bb;
+}
