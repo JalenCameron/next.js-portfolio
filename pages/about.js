@@ -46,7 +46,7 @@ function About() {
             When I&apos;m not busy with coding or design you can catch me
             analyzing soccer games, watching anime or playing some sort of
             physical sport. Oh, and I also know conversational German
-            <Emoji label="sheep" symbol="✌🏽" />
+            <Emoji label="peace-sign" symbol="✌🏽" />
           </p>
         </section>
 

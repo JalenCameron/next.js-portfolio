@@ -1,6 +1,17 @@
 import React from 'react'
 
 const Main = () => {
+  const Emoji = (props) => (
+    <span
+      className="emoji"
+      role="img"
+      aria-label={props.label ? props.label : ""}
+      aria-hidden={props.label ? "false" : "true"}
+    >
+      {props.symbol}
+    </span>
+  );
+
   return (
     <section className='w-full mt-[20rem]'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
@@ -11,13 +22,13 @@ const Main = () => {
                 <div className='carousel-wrapper overflow-hidden w-full h-[50px]'>
                   <div className='carousel-mover relative bottom-[0%]'>
                     <div className='w-full h-[50px]'>
-                      <p className='uppercase text-lg py-4 lg:text-2xl'>Front-End Web Developer</p>
+                      <p className='uppercase text-lg py-4 lg:text-2xl'>Front-End Web Developer <Emoji label="laptop" symbol="💻" /></p>
                     </div>
                     <div className='w-full h-[50px]'>
-                        <p className='uppercase text-lg py-4 lg:text-2xl'>UI/UX Designer</p>
+                        <p className='uppercase text-lg py-4 lg:text-2xl'>UI/UX Designer <Emoji label="draw" symbol="✍🏽" /></p>
                     </div> 
                     <div className='w-full h-[50px]'>
-                        <p className='uppercase text-lg py-4 lg:text-2xl'>Wordpress Wizard</p>
+                        <p className='uppercase text-lg py-4 lg:text-2xl'>Wordpress Wizard <Emoji label="wizard" symbol="🧙🏽‍♂️" /></p>
                     </div> 
                   </div>
                 </div>
