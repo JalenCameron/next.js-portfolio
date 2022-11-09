@@ -12,6 +12,7 @@ import Nomi from "../components/Nomi";
 import Weather from "../components/Weather";
 import TicTacToe from "../components/TicTacToe";
 import MyPortolio from "../components/MyPortolio";
+import HeadSEO from "../components/HeadSEO";
 
 function Works() {
   // TAB RELATED INFORMATION (TAKEN FROM MATERIAL UI)
@@ -52,6 +53,8 @@ function Works() {
 
   return (
     <div>
+      <HeadSEO />
+
       <Navbar highlighted="Work" />
 
       <main className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto">

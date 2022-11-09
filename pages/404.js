@@ -1,11 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import Footer from "../components/Footer";
+import HeadSEO from "../components/HeadSEO";
 import Navbar from "../components/Navbar";
 
 function fourZeroFour() {
   return (
     <div>
+      <HeadSEO />
+
       <Navbar />
 
       {/* Thanks to https://codepen.io/tsotsoblotso/pen/mVMvVv for the idea */}

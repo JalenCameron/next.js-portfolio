@@ -1,26 +1,13 @@
-import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 import Featured from "../components/Featured";
+import HeadSEO from "../components/HeadSEO";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Jalen Cameron · Web Developer</title>
-        <meta
-          name="description"
-          content="Jalen Cameron's Web Development Portfolio"
-        />
-        <meta
-          name="keywords"
-          content="Nextjs, React, Web Developer, UI/UX Designer, JavaScript"
-        />
-        <meta name="author" content="Jalen Cameron" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadSEO />
 
       <div>
         <Navbar />

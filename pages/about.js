@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import HeadSEO from "../components/HeadSEO";
 import Navbar from "../components/Navbar";
 
 function About() {
@@ -16,6 +17,8 @@ function About() {
 
   return (
     <div>
+      <HeadSEO />
+
       <Navbar highlighted="About" />
 
       <main className="about-me relative my-40 mx-[12px] max-w-[1000px] border-[3px] border-solid border-[#7f96bb] border-opacity-40 p-5 lg:mx-auto">

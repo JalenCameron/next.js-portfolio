@@ -12,6 +12,7 @@ import { useState } from "react";
 import Contact from "../components/Contact";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import HeadSEO from "../components/HeadSEO";
 
 /* Using the getStaticPaths() function to tell Next.js to render the pages defined in paths. This function always returns the object, which would be the data that I've mapped through and turned into string results. */
 export async function getStaticPaths() {
@@ -77,6 +78,8 @@ function Project(props) {
 
   return (
     <div>
+      <HeadSEO />
+
       <Navbar />
 
       <main className="mx-auto max-w-[52rem] px-5 pt-24">
