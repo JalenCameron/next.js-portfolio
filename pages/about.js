@@ -56,7 +56,7 @@ function About() {
             <div>
               <p>HTML5</p>
               <p>JavaScript</p>
-              <p>jQuery</p>
+              <p>PHP</p>
               <p>React.js</p>
               <p>Next.js</p>
             </div>

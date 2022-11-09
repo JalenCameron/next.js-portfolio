@@ -18,6 +18,7 @@ export default function Home() {
           content="Nextjs, React, Web Developer, UI/UX Designer, JavaScript"
         />
         <meta name="author" content="Jalen Cameron" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
