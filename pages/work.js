@@ -54,7 +54,9 @@ function Works() {
 
   return (
     <div>
+      {/* Adding custom Head tag with SEO content */}
       <HeadSEO />
+      {/* Adding a Skip Button for Text Readers */}
       <SkipContent />
       <Navbar highlighted="Work" />
 
@@ -63,6 +65,8 @@ function Works() {
         id="main-content"
       >
         <h1 className="text-center text-2xl">Featured Work</h1>
+
+        {/* A Container for my 3 Tabs: All, Development and Design */}
         <Box sx={{ bgcolor: "#f1f3f4" }} className="mx-auto pt-4">
           <Box sx={{ width: "100%", bgcolor: "#f1f3f4" }} className="pt-4">
             <Tabs
@@ -76,6 +80,8 @@ function Works() {
               <Tab label="Design" {...a11yProps(2)} />
             </Tabs>
           </Box>
+
+          {/* The TabPanel acts as a container to hold each project, which I've set up as individual Components */}
           <TabPanel value={value} index={0}>
             <Capstone />
             <Nomi />

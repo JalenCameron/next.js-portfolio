@@ -78,11 +78,14 @@ function Project(props) {
 
   return (
     <div>
+      {/* Adding custom Head tag with SEO content */}
       <HeadSEO />
+      {/* Adding a Skip Button for Text Readers */}
       <SkipContent />
       <Navbar />
 
       <main className="mx-auto max-w-[52rem] px-5 pt-24">
+        {/* PROJECT TITLE AND MOCKUP IMAGE */}
         <h1 className="mt-6 text-center text-4xl">{props.post.title}</h1>
 
         <div className="text-center">
@@ -147,6 +150,7 @@ function Project(props) {
           </section>
         </div>
 
+        {/* TABS CONTAINER */}
         <Box sx={{ bgcolor: "#f1f3f4" }} className="mx-auto pt-4">
           <Box sx={{ width: "100%", bgcolor: "#f1f3f4" }} className="pt-4">
             <Tabs
@@ -160,10 +164,13 @@ function Project(props) {
               <Tab label="Takeaways" {...a11yProps(2)} />
             </Tabs>
           </Box>
+
+          {/* INDIVIDUAL CONTAINER FOR DESIGN CONTENT */}
           <TabPanel value={value} index={0}>
             {/* Design Paragraph 1 */}
             <p className="py-4">{props.post.designParagraph1}</p>
-            {/* Design Image 1 */}
+
+            {/* IF there is a Design Image in my data.js file, an <Image> tag will render */}
             {props.post.designImage1 && (
               <div className="text-center">
                 <Image
@@ -175,11 +182,13 @@ function Project(props) {
                 />
               </div>
             )}
-            {/* Design Paragraph 2 */}
+
+            {/* IF there is a second Design Paragraph in my data.js file, a <p> tag will render */}
             {props.post.designParagraph2 && (
               <p className="py-4">{props.post.designParagraph2}</p>
             )}
-            {/* Design Image 2 */}
+
+            {/* IF there is a second Design Image in my data.js file, an <Image> tag will render */}
             {props.post.designImage2 && (
               <div className="text-center">
                 <Image
@@ -192,10 +201,13 @@ function Project(props) {
               </div>
             )}
           </TabPanel>
+
+          {/* INDIVIDUAL CONTAINER FOR DEVELOPMENT CONTENT */}
           <TabPanel value={value} index={1}>
             {/* Developer Paragraph 1 */}
             <p className="py-4">{props.post.devParagraph1}</p>
-            {/* Developer Image 1*/}
+
+            {/* IF there is a Developer Image in my data.js file, an <Image> tag will render */}
             {props.post.devImage1 && (
               <div className="text-center">
                 <Image
@@ -207,7 +219,8 @@ function Project(props) {
                 />
               </div>
             )}
-            {/* Developer Codeblock 1 */}
+
+            {/* IF there is a Developer Codeblock in my data.js file, a block of code will render */}
             {props.post.codeblock && (
               <figure>
                 <SyntaxHighlighter
@@ -225,11 +238,13 @@ function Project(props) {
                 </figcaption>
               </figure>
             )}
-            {/* Developer Paragraph 2 */}
+
+            {/* IF there is a second Developer Paragraph in my data.js file, a <p> tag will render */}
             {props.post.devParagraph2 && (
               <p className="py-4">{props.post.devParagraph2}</p>
             )}
-            {/* Developer Codeblock 2 */}
+
+            {/* IF there is a Developer Codeblock 2 in my data.js file, a block of code will render */}
             {props.post.codeblock2 && (
               <figure>
                 <SyntaxHighlighter
@@ -248,10 +263,13 @@ function Project(props) {
               </figure>
             )}
           </TabPanel>
+
+          {/* INDIVIDUAL CONTAINER FOR TAKEAWAY CONTENT */}
           <TabPanel value={value} index={2}>
-            {/* Takeaway 1 */}
+            {/* Takeaway Paragraph */}
             <p className="py-4">{props.post.takeaway1}</p>
-            {/* Takeaway Image */}
+
+            {/* IF there is a Takeaway Image in my data.js file, an <Image> tag will render */}
             {props.post.takeawayImage && (
               <div className="text-center">
                 <Image
@@ -263,12 +281,15 @@ function Project(props) {
                 />
               </div>
             )}
-            {/* Takeaway 2 */}
+
+            {/* IF there is a second Takeaway parapraph in my data.js file, a <p> tag will render */}
             {props.post.takeaway2 && (
               <p className="py-4">{props.post.takeaway2}</p>
             )}
           </TabPanel>
         </Box>
+
+        {/* Contact Section that will display for every project*/}
         <section className="mx-auto max-w-md p-4">
           <h2 className="mb-4 border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8">
             Get in Touch.

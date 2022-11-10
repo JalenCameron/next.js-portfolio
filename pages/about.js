@@ -18,7 +18,9 @@ function About() {
 
   return (
     <div>
+      {/* Adding custom Head tag with SEO content */}
       <HeadSEO />
+      {/* Adding a Skip Button for Text Readers */}
       <SkipContent />
       <Navbar highlighted="About" />
 

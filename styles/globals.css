@@ -308,3 +308,33 @@ button {
   width: auto;
   z-index: 100000;
 }
+
+/* CREATING A FUN ANIMATION FOR LANDING PAGE */
+.slide-up {
+  overflow: hidden;
+}
+
+.slide-up span {
+  display: block;
+  opacity: 0;
+}
+
+.slide-up:first-child span {
+  animation: hero-animation .75s .4s forwards;
+}
+
+.slide-up:last-child span {
+  animation: hero-animation 1.2s .55s forwards;
+}
+
+@keyframes hero-animation {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 120%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0);
+  }
+}
