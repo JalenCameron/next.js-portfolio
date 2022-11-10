@@ -13,6 +13,7 @@ import Contact from "../components/Contact";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import HeadSEO from "../components/HeadSEO";
+import SkipContent from "../components/SkipContent";
 
 /* Using the getStaticPaths() function to tell Next.js to render the pages defined in paths. This function always returns the object, which would be the data that I've mapped through and turned into string results. */
 export async function getStaticPaths() {
@@ -79,7 +80,7 @@ function Project(props) {
   return (
     <div>
       <HeadSEO />
-
+      <SkipContent />
       <Navbar />
 
       <main className="mx-auto max-w-[52rem] px-5 pt-24">
@@ -96,7 +97,7 @@ function Project(props) {
         </div>
 
         {/* PROJECT LINKS */}
-        <section className="mx-auto flex w-72 justify-evenly">
+        <section className="mx-auto flex w-72 justify-evenly" id="main-content">
           <Link href={props.post.github}>
             <a
               target="_blank"

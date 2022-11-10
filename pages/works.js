@@ -13,6 +13,7 @@ import Weather from "../components/Weather";
 import TicTacToe from "../components/TicTacToe";
 import MyPortolio from "../components/MyPortolio";
 import HeadSEO from "../components/HeadSEO";
+import SkipContent from "../components/SkipContent";
 
 function Works() {
   // TAB RELATED INFORMATION (TAKEN FROM MATERIAL UI)
@@ -54,10 +55,13 @@ function Works() {
   return (
     <div>
       <HeadSEO />
-
+      <SkipContent />
       <Navbar highlighted="Work" />
 
-      <main className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto">
+      <main
+        className="my-40 mx-[12px] max-w-[900px] p-5 lg:mx-auto"
+        id="main-content"
+      >
         <h1 className="text-center text-2xl">Featured Work</h1>
         <Box sx={{ bgcolor: "#f1f3f4" }} className="mx-auto pt-4">
           <Box sx={{ width: "100%", bgcolor: "#f1f3f4" }} className="pt-4">

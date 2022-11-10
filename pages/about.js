@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import HeadSEO from "../components/HeadSEO";
 import Navbar from "../components/Navbar";
+import SkipContent from "../components/SkipContent";
 
 function About() {
   const Emoji = (props) => (
@@ -18,7 +19,7 @@ function About() {
   return (
     <div>
       <HeadSEO />
-
+      <SkipContent />
       <Navbar highlighted="About" />
 
       <main className="about-me relative my-40 mx-[12px] max-w-[1000px] border-[3px] border-solid border-[#7f96bb] border-opacity-40 p-5 lg:mx-auto">
@@ -26,7 +27,10 @@ function About() {
           Hi <Emoji label="wave" symbol="👋🏽" /> I&apos;m Jalen
         </h1>
 
-        <section className="mx-auto py-8 px-5 shadow-lg lg:max-w-2xl lg:p-8">
+        <section
+          className="mx-auto py-8 px-5 shadow-lg lg:max-w-2xl lg:p-8"
+          id="main-content"
+        >
           <p className="py-2">
             Growing up I&apos;ve always had a strong interest in technology.
             From editing YouTube videos with Sony Vegas Pro to creating blog
