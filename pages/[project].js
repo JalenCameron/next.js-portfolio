@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
-import Contact from "../components/Contact";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import HeadSEO from "../components/HeadSEO";
@@ -270,8 +269,25 @@ function Project(props) {
             )}
           </TabPanel>
         </Box>
+        <section className="mx-auto max-w-md p-4">
+          <h2 className="mb-4 border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8">
+            Get in Touch.
+          </h2>
+          <div className="flex flex-col justify-center">
+            <Link href="mailto:jalenccameron@gmail.com">
+              <a className="mt-6 mb-1 w-full border border-solid bg-[#7f96bb] p-4 text-center text-[#f1f3f4] hover:text-[#343437]">
+                Contact Me Here
+              </a>
+            </Link>
+            <Link href="./works">
+              <a className="mb-6 w-full border border-solid border-[#7f96bb] p-4 text-center hover:bg-[#7f96bb] hover:text-[#f1f3f4]">
+                View my other works
+              </a>
+            </Link>
+          </div>
+        </section>
       </main>
-      <Contact />
+
       <Footer />
     </div>
   );
