@@ -47,7 +47,7 @@ export default function Home() {
                 {/* Adding a Line Animation */}
                 <div className="horizontal-line"></div>
 
-                <div className="slide-up my-4">
+                <div className="slide-up my-2">
                   <span>
                     {/* Adding a Carousel Animation for fun */}
                     <div className="carousel-wrapper h-[50px] w-full overflow-hidden">

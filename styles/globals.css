@@ -334,15 +334,16 @@ button {
 }
 
 .slide-up:first-child span {
-  -o-animation: hero-animation .75s .4s forwards;
-  -ms-animation: hero-animation .75s .4s forwards;
-  -moz-animation: hero-animation .75s .4s forwards;
+  -webkit-animation: hero-animation .75s .4s forwards;
   animation: hero-animation .75s .4s forwards;
 }
 
 .slide-up:last-child span {
-  -o-animation: hero-animation 1.2s .55s forwards;
-  -ms-animation: hero-animation 1.2s .55s forwards;
-  -moz-animation: hero-animation 1.2s .55s forwards;
+  -webkit-animation: hero-animation 1.2s .55s forwards;
   animation: hero-animation 1.2s .55s forwards;
+}
+
+body {
+  -webkit-perspective: inherit;
+  perspective: inherit;
 }
