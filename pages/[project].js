@@ -300,9 +300,9 @@ function Project(props) {
                 Contact Me Here
               </a>
             </Link>
-            <Link href="./works">
+            <Link href="./work">
               <a className="mb-6 w-full border border-solid border-[#7f96bb] p-4 text-center hover:bg-[#7f96bb] hover:text-[#f1f3f4]">
-                View my other works
+                View my other work
               </a>
             </Link>
           </div>

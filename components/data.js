@@ -15,7 +15,7 @@ export const data = [
     timeline: "5 Weeks",
     roles: "UI Designer · Developer · Debugger",
     designParagraph1:
-      "These mockups were created using Adobe Photoshop and XD, keeping a mobile-first approach in mind. I wanted to maintain well documented folder groups as well to show UI changes in response to various user interactions",
+      "The mockups for this project were created using Adobe Photoshop and XD, keeping a mobile-first approach in mind. I decided to maintain well documented folder groups to show UI changes in response to various user interactions",
     designParagraph2:
       "As for the design of this project, I approached it with the idea that I wanted a clean and uncluttered interface that only displays the movie poster at first. Hovering over the poster itself on Desktop would provide some movie information, while clicking on the poster would take you to the individual movie page with additional info.",
     devParagraph1:
@@ -82,13 +82,13 @@ export const data = [
     devParagraph1:
       "After creating the Movie Database Project I wanted to explore making API calls on my own. This project in particular was created following a tutorial online, although I did modify the code to make it my own. To start, it did involve researching some of the terms used and the syntax involved. This allowed me to understand what I was writing out, and where I could look for improvements. For instance, I wrote out a conditional statement to change the background depending on which weather icon was displayed, and I also applied those same principles towards displaying a greeting when there was no information currently rendered.",
     takeaway1:
-      "This was a very fun project to bring to life, and it was also a great way for me to familiarize myself with Next.js and Tailwind. I was able to practice how to access data from props (which was initially a tricky concept for me to grasp having had very limited knowledge of React prior to this project). I actually found out that using Axios to make HTTP requests was more useful than just a regular Fetch API. It was a lot less work writing out .get() or .then(), and there was no need to convert my request to a JSON string either. I was also able to get a handle on the syntax for a new styling framework called Tailwind. ",
+      "This was a very fun project to bring to life, and it was also a great way for me to familiarize myself with Next.js and Tailwind. I was able to practice how to access data from props (which was initially a tricky concept for me to grasp, and still could be going forward haha). I actually found out that using Axios to make HTTP requests was more useful than just a regular Fetch API. It was a lot less work writing out .get() or .then(), and there was no need to convert my request to a JSON string either. I was also able to get a handle on the syntax for a new styling framework called Tailwind.",
     designImage1: "/assets/weather-bg.png",
     desAlt1:
       "A dynamic background is generated depending on the Weather Code provided when you search for a city",
     takeawayImage: "/assets/weather-axios.png",
     takeawayAlt: "Making use of axios instead of a regular Fetch API",
-    codeblock: `if(weather.weather[0].id >= 200 && weather.weather[0].id <= 232) {
+    codeblock: `if (weather.weather[0].id >= 200 && weather.weather[0].id <= 232) {
     // If the weather indicates that it's a thunderstorm:
     return (
         <Image
@@ -97,22 +97,22 @@ export const data = [
             layout="fill"
             className="object-cover"
         />
-    )
+      )
     }`,
     figcaption:
-      "A conditional statement to display a certain background image depending on weather conditions",
+      "Here is a conditional statement to display a certain background image depending on the weather conditions",
   },
   {
     title: "Tic Tac Toe",
     url: "tic-tac-toe",
-    tools: "React · CSS",
+    tools: "JavaScript · CSS",
     description:
       "An interactive game built with JavaScript and basic CSS styling",
     overview:
       "For those that may not be familiar with the game, Tic Tac Toe is a two-player game in which the players fill up nine empty rectangles in a table with either an X or an O when it is their turn. If someone gets three in a row (either vertically, horizontally or diagonally) that player wins. Honestly, I figured this would be a good way to familiarize myself with the basics of JavaScript while creating a simple and interesting project.",
     id: "3",
     image: "/assets/game-mockup.png",
-    alt: "A fun game of Tic Tac Toe built with React.js and CSS",
+    alt: "A fun game of Tic Tac Toe built with JavaScript and CSS",
     github: "https://github.com/JalenCameron/Vanilla-JavaScript-Tic-Tac-Toe",
     liveSite: "https://tictactoe.jalencameron.com",
     timeline: "2 Days",
@@ -120,13 +120,11 @@ export const data = [
     designParagraph1:
       "To maintain the theme of the game, I wanted to implement a grid container and have three rows of three. The grid needed to be clickable to allow for players to place down their associated piece (either X or O).  As for the players themselves, I simply applied a font and colour scheme to give them their own unique style",
     devParagraph1:
-      "This game was built with some basic front-end syntax, and uses simple logic to complete some validation checks. The For Loop will look through each square and check whether the gameState matches with an array of Winning Conditions I set up ealier, while the roundDraw variable simply checks whether the board is filled or not.",
+      "This game was built with some basic front-end syntax, and uses simple logic to complete some validation checks. The for loop will look through each square and check whether the gameState matches with an array of 'Winning Conditions' I set up earlier, while the roundDraw variable simply checks whether the board is filled or not.",
     takeaway1:
       "This project was a lot of fun to build. I had to think of each step that a player would take, and the functions that would allow the game to flow from one step to another. Initially I figured it would be easy to create this project, but I found out fairly quickly that that was not the case. The handleResults() function was not easy to do and required some extra logic (and help online) in order to come up with the best solution. I think if I were to revisit this game in the future I’d want to try again without the help of outside resources. I’d also want to add a bit more functionality, for example an Input for Player names. Or a scoreboard.",
     designImage1: "/assets/game-grid.png",
     desAlt1: "A photo displaying the grid and styling I used for the game",
-    devImage1: "",
-    devAlt1: "",
     codeblock: `function handleResults() {
   let roundWon = false;
   for (let i = 0; i <= 7; i++) {
@@ -158,20 +156,20 @@ export const data = [
   }
 }`,
     figcaption:
-      "A function that checks if there are 3 matches across the board",
+      "Here my function is checking if there are 3 matches across the board, and if not then it checks for a potential tie",
   },
   {
     danial:
-      "Thanks for all your help Danial! Wish you all the best in the future!",
+      "Thanks for all your help Danial! Wishing you all the best in the future buddy!",
     reilly:
-      "Reilly! Thanks for helping me out with my designs, you're a rockstar!",
+      "Reilly! Thanks for helping me out with my designs, you're a rockstar and a great friend!",
     title: "Portfolio Project",
     url: "portfolio",
     tools: "Next · Tailwind · Figma",
     description:
       "A portfolio website that was designed and developed as a platform to showcase my skills in UI/UX Design and Front-End Web Development.",
     overview:
-      "My portfolio was created with the intention to showcase my work as a developer so far. Utilizing an agile approach, I continuously implemented and revised my designs and some development features. I took it upon myself to study Next.js (and coupled that with Tailwind CSS) to build this site, with the intention that it would allow for future expansion and greater interactivity.",
+      "My portfolio was created with the intention to showcase my work as a developer so far. Utilizing an agile approach, I continuously implemented and revised my designs and updated development features. I took it upon myself to study Next.js (and coupled that with Tailwind CSS) to build this site, with the intention that it would allow for future expansion and greater interactivity.",
     id: "4",
     image: "/assets/portfolio-mockup.png",
     alt: "Jalen Cameron's Portfolio Project",
@@ -203,7 +201,7 @@ export const data = [
     Get in Touch.
 </h2>`,
     figcaption:
-      "Utilizing Tailwind CSS in the header to generate a left-sided border and proper font-sizing",
+      "Here I'm utilizing Tailwind CSS in the header to generate a left-sided border and proper font-sizing all within the element itself",
   },
   {
     title: "Summer Panda Cafe",
