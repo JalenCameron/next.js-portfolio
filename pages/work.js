@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -16,7 +15,7 @@ import HeadSEO from "../components/HeadSEO";
 import SkipContent from "../components/SkipContent";
 
 function Works() {
-  // TAB RELATED INFORMATION (TAKEN FROM MATERIAL UI)
+  // TAB INFORMATION (TAKEN FROM MATERIAL UI)
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -51,6 +50,7 @@ function Works() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  // END OF TAB INFORMATION (TAKEN FROM MATERIAL UI)
 
   return (
     <div>

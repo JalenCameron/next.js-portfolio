@@ -1,6 +1,7 @@
 export const data = [
   {
     title: "Nomi",
+    url: "movie-database",
     tools: "Next · SASS · Adobe XD · Adobe Photoshop",
     description:
       "Nomi is an interactive web application that allows users to browse and track their favourite movies based on ratings, popularity or release date.",
@@ -63,6 +64,7 @@ export const data = [
   },
   {
     title: "Weather App",
+    url: "weather-app",
     tools: "Next · Tailwind · Adobe XD",
     description:
       "A Weather Application that utilizes an API Key to fetch short-term forecasts for over 200,000 known cities in the world.",
@@ -102,6 +104,7 @@ export const data = [
   },
   {
     title: "Tic Tac Toe",
+    url: "tic-tac-toe",
     tools: "React · CSS",
     description:
       "An interactive game built with JavaScript and basic CSS styling",
@@ -163,6 +166,7 @@ export const data = [
     reilly:
       "Reilly! Thanks for helping me out with my designs, you're a rockstar!",
     title: "Portfolio Project",
+    url: "portfolio",
     tools: "Next · Tailwind · Figma",
     description:
       "A portfolio website that was designed and developed as a platform to showcase my skills in UI/UX Design and Front-End Web Development.",
@@ -203,6 +207,7 @@ export const data = [
   },
   {
     title: "Summer Panda Cafe",
+    url: "capstone",
     tools: "WordPress · PHP · WooCommerce · Figma",
     description:
       "A fully customized Website built for a cafe that offers online ordering and other vendor application features. The site was developed using WordPress and WooCommerce plugins in a collaborative team environment",

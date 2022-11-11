@@ -17,7 +17,7 @@ import SkipContent from "../components/SkipContent";
 /* Using the getStaticPaths() function to tell Next.js to render the pages defined in paths. This function always returns the object, which would be the data that I've mapped through and turned into string results. */
 export async function getStaticPaths() {
   const paths = data.map((post) => ({
-    params: { project: post.id.toString() },
+    params: { project: post.url.toString() },
   }));
   return {
     paths: paths,
@@ -26,9 +26,9 @@ export async function getStaticPaths() {
 }
 /* I'm pre-rendering a page during build time by generating all the HTML code and data in advance. And the data is later cached by the server. Using getStaticPaths() I'm able to create props for each piece of data passed through. I then compare the ID's of my data.js file and the props I've passed through, and only return the information with the matching ID number */
 export async function getStaticProps(context) {
-  const id = context.params.project;
+  const url = context.params.project;
 
-  const project = data.filter((d) => d.id.toString() === id);
+  const project = data.filter((d) => d.url === url);
 
   return {
     props: {
