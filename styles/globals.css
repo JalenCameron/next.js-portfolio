@@ -333,24 +333,16 @@ button {
   }
 }
 
-@-webkit-keyframes hero-animation {
-  0% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 120%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0);
-  }
-}
-
 .slide-up:first-child span {
-  -webkit-animation: hero-animation .75s .4s forwards;
+  -o-animation: hero-animation .75s .4s forwards;
+  -ms-animation: hero-animation .75s .4s forwards;
+  -moz-animation: hero-animation .75s .4s forwards;
   animation: hero-animation .75s .4s forwards;
 }
 
 .slide-up:last-child span {
-  -webkit-animation: hero-animation 1.2s .55s forwards;
+  -o-animation: hero-animation 1.2s .55s forwards;
+  -ms-animation: hero-animation 1.2s .55s forwards;
+  -moz-animation: hero-animation 1.2s .55s forwards;
   animation: hero-animation 1.2s .55s forwards;
 }
