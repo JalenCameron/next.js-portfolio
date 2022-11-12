@@ -34,19 +34,23 @@ function About() {
           id="main-content"
         >
           <p className="py-2">
-            Growing up I&apos;ve always had a strong interest in technology.
-            From editing YouTube videos with Sony Vegas Pro to creating blog
-            posts on <em>piczo.com</em> (does anyone remember this site?),
-            I&apos;ve always tried to immerse myself with whatever technological
-            applications were offered at the time. That being said, it
-            wasn&apos;t until 2022 where I really started to take notice of web
-            development and all that it had to offer.
+            My journey into web development actually started when I was quite
+            young. As a kid I used to add and create content on{" "}
+            <em>piczo.com</em> (which for those that are unfamiliar, it was a
+            blogging website that offered a few features similar to what
+            WordPress offers today). This was exciting to me, mostly due to the
+            fact that the possibilities seemed endless when it came to running
+            my own blog/&quot;site&quot;. Unfortunately I fell out of touch with
+            that passion, and passively followed along with the IT world as I
+            continued to grow up.
           </p>
 
           <p className="py-2">
-            With solid fundamentals in various Front-End programming languages
-            such as React and PhP I&apos;m competent at building dynamic and
-            fully responsive sites. I&apos;m also very capable of creating high
+            It wasn&apos;t until 2022 where I really started to take notice of
+            web development and all that it had to offer. With solid
+            fundamentals in various Front-End programming languages such as
+            React and PhP, I&apos;m competent at building dynamic and fully
+            responsive sites. I&apos;m also very capable of creating high
             quality user-centered designs thanks to my proficiency with such
             tools as Adobe XD, Figma and Tailwind.
           </p>
