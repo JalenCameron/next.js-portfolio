@@ -219,11 +219,15 @@ export const data = [
     timeline: "4 Weeks",
     roles: "Front-End Developer · Debugger",
     designParagraph1:
-      "Currently in progress and will be updated when finished!",
-    devParagraph1: "Currently in progress and will be updated when finished!",
+      "Creation of a content plan was necessary for this project. My team determined each piece of information that would be required on the site, which then led to mapping out the layout of the page using low-fidelity wireframes. We then consulted with the WordPress template hierarchy in order to determine what pages corresponded with the correct template(s)",
+    designParagraph2:
+      "In terms of styling we also employed the Underscores Sass theme, which gave us a lot of extra creativity to work with. Having each section broken down into a sub-folder (e.g., typography, variables, etc.) was very beneficial in the long run when working on such a huge site as this.",
+    devParagraph1:
+      "Due to this website being created with WordPress, we built custom post types and taxonomies, as well as custom fields to allow the site owner to update whatever content dynamically whenever they needed to. We also wrote custom loops to ensure the appropriate content was displayed accurately.",
     takeaway1: "Currently in progress and will be updated when finished!",
-    designImage1: "",
-    desAlt1: "Currently in progress and will be updated when finished!",
+    designImage1: "/assets/spc-wireframe.png",
+    desAlt1:
+      "A low-fidelity mockup of our Cafe home page, featuring template pages for the appropriate sections",
     devImage1: "",
     devAlt1: "Currently in progress and will be updated when finished!",
     codeblock: ``,
