@@ -212,7 +212,7 @@ export const data = [
     overview:
       "Summer Panda Cafe is a restaurant that has opened its second location in Burnaby, BC. Their main specialty is Bingsu, although they do offer an assortment of drinks and other desserts, as well as Seasonal Products. Currently they're promoting their new Online Ordering feature, which would allow customers to order ahead of time and pickup in store.",
     id: "5",
-    image: "/assets/coming-soon-mockup.png",
+    image: "/assets/spc-mockup.png",
     alt: "A Cafe website built through PHP, WordPress and Sass",
     github: "https://github.com/htpwebdesign/panda-cafe",
     liveSite: "https://summerpandacafe.bcitwebdeveloper.ca/",
@@ -224,13 +224,37 @@ export const data = [
       "In terms of styling we also employed the Underscores Sass theme, which gave us a lot of extra creativity to work with. Having each section broken down into a sub-folder (e.g., typography, variables, etc.) was very beneficial in the long run when working on such a huge site as this.",
     devParagraph1:
       "Due to this website being created with WordPress, we built custom post types and taxonomies, as well as custom fields to allow the site owner to update whatever content dynamically whenever they needed to. We also wrote custom loops to ensure the appropriate content was displayed accurately.",
-    takeaway1: "Currently in progress and will be updated when finished!",
+    takeaway1:
+      "Honestly this project allowed me to get hands on experience with project planning and working collaboratively as a web developer. Unlike individual projects, planning became important before prototyping and development began. Knowing how to split up the tasks into small tickets and assigning the person for the right job was the key takeaway for me from this project. We used Asana to manage and monitor the progress and Slack for general communication. Overall, every planned feature was implemented to the expected specification and the project was delivered to the best of our ability.",
+    takeaway2:
+      "I would also like to highlight that familiarizing myself with WordPress functions and templates was also fairly important. It was great being able to understand PHP and implement it in ways that benefitted the creation of the site, and it really helped flesh out my understanding of JavaScript concepts as well.",
     designImage1: "/assets/spc-wireframe.png",
     desAlt1:
       "A low-fidelity mockup of our Cafe home page, featuring template pages for the appropriate sections",
-    devImage1: "",
-    devAlt1: "Currently in progress and will be updated when finished!",
-    codeblock: ``,
-    figcaption: "Currently in progress and will be updated when finished!",
+    designImage2: "/assets/low-fidelity.png",
+    desAlt2:
+      "Creatively adding pictures and aesthetic colours to each menu category we created",
+    codeblock: `<article class="job">
+    <?php
+    if ( function_exists ( 'get_field' ) ) {
+      if ( get_field( 'job_name' ) ) {
+        echo "<h3>";
+        the_field( 'job_name' );
+        echo "</h3>";
+      }
+      if ( get_field( 'job_description' ) ) {
+        the_field( 'job_description' );
+      }
+      echo "<div class='career-location'>";
+      $terms = get_the_terms(get_the_ID(), 'spc-location-category');
+      foreach($terms as $term){
+        echo "<p><b>Location</b>: ".$term->name."</p>";
+      }
+      echo "</div>";
+    }
+    ?>
+</article>`,
+    figcaption:
+      "For example, in order to display each Job Posting, we first needed to check if a Custom Field was created. If all criteria was met we could then loop through each Job posted and display them in real time.",
   },
 ];
