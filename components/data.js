@@ -221,9 +221,9 @@ export const data = [
     designParagraph1:
       "Creation of a content plan was necessary for this project. My team determined each piece of information that would be required on the site, which then led to mapping out the layout of the page using low-fidelity wireframes. We then consulted with the WordPress template hierarchy in order to determine what pages corresponded with the correct template(s)",
     designParagraph2:
-      "In terms of styling we also employed the Underscores Sass theme, which gave us a lot of extra creativity to work with. Having each section broken down into a sub-folder (e.g., typography, variables, etc.) was very beneficial in the long run when working on such a huge site as this.",
+      "In terms of styling we also employed the Underscores Sass theme, which gave us a lot of extra creativity to work with. Having each section broken down into a sub-folder (e.g., typography, variables, etc.) was very beneficial in the long run when working on a huge site such as this.",
     devParagraph1:
-      "Due to this website being created with WordPress, we built custom post types and taxonomies, as well as custom fields to allow the site owner to update whatever content dynamically whenever they needed to. We also wrote custom loops to ensure the appropriate content was displayed accurately.",
+      "Due to this website being created with WordPress, we built custom post types and taxonomies, as well as custom fields to allow the site owner to update their content dynamically whenever they needed to. We also configured tax queries and loops to ensure the appropriate content was displayed accurately on each page.",
     takeaway1:
       "Honestly this project allowed me to get hands on experience with project planning and working collaboratively as a web developer. Unlike individual projects, planning became important before prototyping and development began. Knowing how to split up the tasks into small tickets and assigning the person for the right job was the key takeaway for me from this project. We used Asana to manage and monitor the progress and Slack for general communication. Overall, every planned feature was implemented to the expected specification and the project was delivered to the best of our ability.",
     takeaway2:
