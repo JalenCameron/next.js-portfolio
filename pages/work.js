@@ -11,6 +11,7 @@ import Nomi from "../components/Nomi";
 import Weather from "../components/Weather";
 import TicTacToe from "../components/TicTacToe";
 import MyPortolio from "../components/MyPortolio";
+import Trivia from "../components/Trivia";
 import HeadSEO from "../components/HeadSEO";
 import SkipContent from "../components/SkipContent";
 
@@ -88,6 +89,7 @@ function Works() {
             <Weather />
             <TicTacToe />
             <MyPortolio />
+            <Trivia />
           </TabPanel>
           <TabPanel value={value} index={1}>
             <Nomi />
@@ -100,6 +102,7 @@ function Works() {
             <MyPortolio />
             <Nomi />
             <Weather />
+            <Trivia />
           </TabPanel>
         </Box>
       </main>

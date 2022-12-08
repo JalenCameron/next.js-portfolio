@@ -257,4 +257,45 @@ export const data = [
     figcaption:
       "For example, in order to display each Job Posting, we first needed to check if a Custom Field was created. If all criteria was met we could then loop through each Job posted and display them in real time.",
   },
+  {
+    title: "Quizipedia",
+    url: "trivia-game",
+    tools: "TypeScript · React · CSS",
+    description:
+      "A Web Application that utilizes an API Key to fetch free to use, user-contributed trivia questions from a database",
+    overview:
+      "This Web Application fetches data from The Open Trivia Database (opentdb.com) and provides over 9,000 questions to draw from. All the user has to do is click start and they will be given 10 randomized questions with multiple answers that they can select. The user's selection will be highlighted either green (correct) or red (incorrect). For each correctly guessed answer they will receive a point.",
+    id: 6,
+    image: "/assets/trivia-mockup.png",
+    alt: "An interactive trivia game built with TypeScript and React",
+    github: "https://github.com/JalenCameron/Quiz-Application",
+    liveSite: "https://trivia.jalencameron.com/",
+    timeline: "2 Days",
+    roles: "Front-End Developer · UI Designer · Debugger",
+    designParagraph1:
+      "Something I've been meaning to implement in all my projects was a nice spinning animation when loading data. The first thing I needed to do was build a conditional statement that would only allow it to run if the loading state I built was set to 'true'. If those conditions were met, the styling I made would appear on the screen. It was fairly straightforward to create, mostly through use of @keyframes and setting the animation styling to infinite.",
+    devParagraph1:
+      "The point of this web application was to familiarize myself with TypeScript and what it has to offer. It was great practice for me to make use of Enum's and Type's, as I find Type Safety to be fairly important while I continue to grow as a Web Developer.",
+    takeaway1:
+      "It was pretty fun getting to work with TypeScript. For example, I got to learn what the question mark (?:) represented in relation to TS syntax. For those unfamiliar, it simply means that the property that it's attached to is now optional. Another way of looking at it is that it's similar to defining two types to a property, where one is defined and the other option is 'undefined.' It was also great to be able to clearly define the types for each prop I was passing through, as that made error handling a lot more easier as I got closer to build time.",
+    designImage1: "/assets/trivia-spinner.png",
+    desAlt1:
+      "A spinner animation that was created through CSS using Keyframes and Animations",
+    codeblock: `type Question = {
+    category: string; 
+    correct_answer: string;
+    difficulty: string;
+    incorrect_answers: string[];
+    question: string;
+    type: string;
+}
+
+enum Difficulty {
+    EASY = "easy",
+    MEDIUM = "medium",
+    HARD = "hard",
+}`,
+    figcaption:
+      "Here I've provided an example of a Type and an Enum I had to use while fetching the API data.",
+  },
 ];
