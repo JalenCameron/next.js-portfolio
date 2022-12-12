@@ -95,6 +95,7 @@ function Works() {
             <Nomi />
             <Weather />
             <TicTacToe />
+            <Trivia />
             <MyPortolio />
             <Capstone />
           </TabPanel>
@@ -102,7 +103,6 @@ function Works() {
             <MyPortolio />
             <Nomi />
             <Weather />
-            <Trivia />
           </TabPanel>
         </Box>
       </main>
