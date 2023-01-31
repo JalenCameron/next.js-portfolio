@@ -36,7 +36,7 @@ function MyPortolio() {
             <div className='container max-w-4xl my-8 p-5 border-2 border-opacity-40 border-solid border-[#7f96bb] md:flex'>
                 <Link href={`/${data[3].url}`}>
                     <div className='max-w-md md:w-full rsp:m-auto cursor-pointer'>
-                        <Image src="/assets/my-portfolio.png" alt="Jalen Cameron's Portfolio" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' lazy='loading' />
+                        <Image src="/assets/portfolio-website.png" alt="Jalen Cameron's Portfolio" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' lazy='loading' />
                     </div>
                 </Link>
                 <article className='relative w-full p-4 cs:ml-[20px]'>

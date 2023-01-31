@@ -36,7 +36,7 @@ function Capstone() {
             <div className='container max-w-4xl my-8 p-5 border-2 border-opacity-40 border-solid border-[#7f96bb] md:flex'>
                 <Link href={`/${data[4].url}`}>
                     <div className='max-w-md md:w-full rsp:m-auto cursor-pointer'>
-                        <Image src="/assets/spc.png" alt="Summer Panda Cafe" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' lazy='loading' />
+                        <Image src="/assets/spc-website.png" alt="Summer Panda Cafe" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' lazy='loading' />
                     </div>
                 </Link>
                 <article className='relative w-full p-4 cs:ml-[20px]'>

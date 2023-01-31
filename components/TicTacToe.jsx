@@ -36,7 +36,7 @@ function TicTacToe() {
             <div className='container max-w-4xl my-8 p-5 border-2 border-opacity-40 border-solid border-[#7f96bb] md:flex'>
                 <Link href={`/${data[2].url}`}>
                     <div className='max-w-md md:w-full rsp:m-auto cursor-pointer'>
-                        <Image src="/assets/game.png" alt="An Interactive Tic Tac Toe Game" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' lazy='loading' />
+                        <Image src="/assets/game-website.png" alt="An Interactive Tic Tac Toe Game" width={1200} height={660} layout={"intrinsic"} className='w-full h-auto' lazy='loading' />
                     </div>
                 </Link>
                 <article className='relative w-full p-4 cs:ml-[20px]'>
