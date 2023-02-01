@@ -273,14 +273,13 @@ export const data = [
     timeline: "2 Days",
     roles: "Front-End Developer · UI Designer · Debugger",
     designParagraph1:
-      "Something I've been meaning to implement in all my projects was a nice spinning animation when loading data. The first thing I needed to do was build a conditional statement that would only allow it to run if the loading state I built was set to 'true'. If those conditions were met, the styling I made would appear on the screen. It was fairly straightforward to create, mostly through use of @keyframes and setting the animation styling to infinite.",
+      "This project was mostly to focus on TypeScript and the benefits of type safety. So with that in mind, I didn't really go crazy with a mockup for how I wanted the web application to look. I knew I wanted a simplistic design, and building an almost cartoonish aesthetic really brought that ideal to life. Essentially I rounded all the corners so they weren't sharp, used a sans-serif font to essentially to create a 'fun' design (for lack of a better term), and in the initial production I used a lighter colour for borders and containers. Basing my design off of these mockups I whipped up actually made the process very seamless so I'm grateful for that.",
     devParagraph1:
       "The point of this web application was to familiarize myself with TypeScript and what it has to offer. It was great practice for me to make use of Enum's and Type's, as I find Type Safety to be fairly important while I continue to grow as a Web Developer.",
     takeaway1:
       "It was pretty fun getting to work with TypeScript. For example, I got to learn what the question mark (?:) represented in relation to TS syntax. For those unfamiliar, it simply means that the property that it's attached to is now optional. Another way of looking at it is that it's similar to defining two types to a property, where one is defined and the other option is 'undefined.' It was also great to be able to clearly define the types for each prop I was passing through, as that made error handling a lot more easier as I got closer to build time.",
-    designImage1: "/assets/trivia-spinner.png",
-    desAlt1:
-      "A spinner animation that was created through CSS using Keyframes and Animations",
+    designImage1: "/assets/trivia-wireframe.png",
+    desAlt1: "A low-fidelity wireframe built in Adobe XD",
     codeblock: `type Question = {
     category: string; 
     correct_answer: string;
