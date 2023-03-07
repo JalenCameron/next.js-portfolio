@@ -9,7 +9,7 @@ import { useState } from "react";
 import Capstone from "../components/Capstone";
 import Nomi from "../components/Nomi";
 import Weather from "../components/Weather";
-import TicTacToe from "../components/TicTacToe";
+import Chef from "../components/Chef";
 import MyPortolio from "../components/MyPortolio";
 import Trivia from "../components/Trivia";
 import HeadSEO from "../components/HeadSEO";
@@ -87,14 +87,13 @@ function Works() {
             <Capstone />
             <Nomi />
             <Weather />
-            <TicTacToe />
+            <Chef />
             <MyPortolio />
             <Trivia />
           </TabPanel>
           <TabPanel value={value} index={1}>
             <Nomi />
             <Weather />
-            <TicTacToe />
             <Trivia />
             <MyPortolio />
             <Capstone />
@@ -103,6 +102,7 @@ function Works() {
             <MyPortolio />
             <Nomi />
             <Weather />
+            <Chef />
           </TabPanel>
         </Box>
       </main>

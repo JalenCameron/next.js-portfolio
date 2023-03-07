@@ -103,60 +103,31 @@ export const data = [
       "Here is a conditional statement to display a certain background image depending on the weather conditions",
   },
   {
-    title: "Tic Tac Toe",
-    url: "tic-tac-toe",
-    tools: "JavaScript · CSS",
+    title: "Client Portfolio",
+    url: "chef-mcgehee",
+    tools: "Figma · WordPress",
     description:
-      "An interactive game built with JavaScript and basic CSS styling",
+      "A portfolio website designed and developed to showcase the clients expertise at cooking.",
     overview:
-      "For those that may not be familiar with the game, Tic Tac Toe is a two-player game in which the players fill up nine empty rectangles in a table with either an X or an O when it is their turn. If someone gets three in a row (either vertically, horizontally or diagonally) that player wins. Honestly, I figured this would be a good way to familiarize myself with the basics of JavaScript while creating a simple and interesting project.",
+      "The objective of this portfolio was to showcase the clients food to be able to market them for future jobs. We didn't want it to feel too much like an advertisement though, so we had to be careful with finding the balance between having them stand out and illustrating their work in an interesting way.",
     id: "3",
-    image: "/assets/game-mockup.png",
-    alt: "A fun game of Tic Tac Toe built with JavaScript and CSS",
-    github: "https://github.com/JalenCameron/Vanilla-JavaScript-Tic-Tac-Toe",
-    liveSite: "https://tictactoe.jalencameron.com",
-    timeline: "2 Days",
+    image: "/assets/coming-soon-mockup.png",
+    alt: "A construction photo to show that the current site is still being constructed.",
+    github: "https://github.com/JalenCameron/",
+    liveSite: "https://chef.jalencameron.com",
+    timeline: "N/A",
     roles: "UI Designer · Front-End Developer",
     designParagraph1:
-      "To maintain the theme of the game, I wanted to implement a grid container and have three rows of three. The grid needed to be clickable to allow for players to place down their associated piece (either X or O).  As for the players themselves, I simply applied a font and colour scheme to give them their own unique style",
-    devParagraph1:
-      "This game was built with some basic front-end syntax, and uses simple logic to complete some validation checks. The for loop will look through each square and check whether the gameState matches with an array of 'Winning Conditions' I set up earlier, while the roundDraw variable simply checks whether the board is filled or not.",
-    takeaway1:
-      "This project was a lot of fun to build. I had to think of each step that a player would take, and the functions that would allow the game to flow from one step to another. Initially I figured it would be easy to create this project, but I found out fairly quickly that that was not the case. The handleResults() function was not easy to do and required some extra logic (and help online) in order to come up with the best solution. I think if I were to revisit this game in the future I’d want to try again without the help of outside resources. I’d also want to add a bit more functionality, for example an Input for Player names. Or a scoreboard.",
-    designImage1: "/assets/game-grid.png",
-    desAlt1: "A photo displaying the grid and styling I used for the game",
-    codeblock: `function handleResults() {
-  let roundWon = false;
-  for (let i = 0; i <= 7; i++) {
-    const winCondition = winningConditions[i];
-    let a = gameState[winCondition[0]];
-    let b = gameState[winCondition[1]];
-    let c = gameState[winCondition[2]];
-    if (a === "" || b === "" || c === "") {
-      continue;
-    }
-    if (a === b && b === c) {
-      roundWon = true;
-      break;
-    }
-  }
-
-  if (roundWon) {
-    displayStatus.innerHTML = winningMessage();
-    gameActive = false;
-    return;
-  }
-
-  // Also checking whether there are any cells that haven't been chosen yet
-  let roundDraw = !gameState.includes("");
-  if (roundDraw) {
-    displayStatus.innerHTML = tieMessage();
-    gameActive = false;
-    return;
-  }
-}`,
-    figcaption:
-      "Here my function is checking if there are 3 matches across the board, and if not then it checks for a potential tie",
+      "I started off by researching a variety of cooking sites and popular chef sites. The client also offered suggestions for what they were envisioning (e.g., do not want the site to look cluttered). Taking all of this into account, I was able to maintain a focused and consistent style while designing low-fidelity mockups.",
+    designParagraph2:
+      "After trying a multi-page layout design (and consequently not being satisifed with the results) I swapped to a single page layout because I found that it made navigation easier for the user, which would hopefully minimize the bounce rate. It also makes mobile-friendly development easier too, which was something my team member and I were keen to have in the development stage.",
+    devParagraph1: "Currently in progress.",
+    takeaway1: "Will be updated when site goes live.",
+    designImage1: "/assets/chef-wireframes.png",
+    desAlt1:
+      "A photo displaying multi-page low-fidelity wireframes. Later scrapped for a single page layout.",
+    codeblock: ``,
+    figcaption: "",
   },
   {
     danial:
@@ -265,7 +236,7 @@ export const data = [
       "A Web Application that utilizes an API Key to fetch free to use, user-contributed trivia questions from a database",
     overview:
       "This Web Application fetches data from The Open Trivia Database (opentdb.com) and provides over 9,000 questions to draw from. All the user has to do is click start and they will be given 10 randomized questions with multiple answers that they can select. The user's selection will be highlighted either green (correct) or red (incorrect). For each correctly guessed answer they will receive a point.",
-    id: 6,
+    id: "6",
     image: "/assets/trivia-mockup.png",
     alt: "An interactive trivia game built with TypeScript and React",
     github: "https://github.com/JalenCameron/Quiz-Application",
@@ -296,5 +267,61 @@ enum Difficulty {
 }`,
     figcaption:
       "Here I've provided an example of a Type and an Enum I had to use while fetching the API data.",
+  },
+  {
+    title: "Tic Tac Toe",
+    url: "tic-tac-toe",
+    tools: "JavaScript · CSS",
+    description:
+      "An interactive game built with JavaScript and basic CSS styling",
+    overview:
+      "For those that may not be familiar with the game, Tic Tac Toe is a two-player game in which the players fill up nine empty rectangles in a table with either an X or an O when it is their turn. If someone gets three in a row (either vertically, horizontally or diagonally) that player wins. Honestly, I figured this would be a good way to familiarize myself with the basics of JavaScript while creating a simple and interesting project.",
+    id: "7",
+    image: "/assets/game-mockup.png",
+    alt: "A fun game of Tic Tac Toe built with JavaScript and CSS",
+    github: "https://github.com/JalenCameron/Vanilla-JavaScript-Tic-Tac-Toe",
+    liveSite: "https://tictactoe.jalencameron.com",
+    timeline: "2 Days",
+    roles: "UI Designer · Front-End Developer",
+    designParagraph1:
+      "To maintain the theme of the game, I wanted to implement a grid container and have three rows of three. The grid needed to be clickable to allow for players to place down their associated piece (either X or O).  As for the players themselves, I simply applied a font and colour scheme to give them their own unique style",
+    devParagraph1:
+      "This game was built with some basic front-end syntax, and uses simple logic to complete some validation checks. The for loop will look through each square and check whether the gameState matches with an array of 'Winning Conditions' I set up earlier, while the roundDraw variable simply checks whether the board is filled or not.",
+    takeaway1:
+      "This project was a lot of fun to build. I had to think of each step that a player would take, and the functions that would allow the game to flow from one step to another. Initially I figured it would be easy to create this project, but I found out fairly quickly that that was not the case. The handleResults() function was not easy to do and required some extra logic (and help online) in order to come up with the best solution. I think if I were to revisit this game in the future I’d want to try again without the help of outside resources. I’d also want to add a bit more functionality, for example an Input for Player names. Or a scoreboard.",
+    designImage1: "/assets/game-grid.png",
+    desAlt1: "A photo displaying the grid and styling I used for the game",
+    codeblock: `function handleResults() {
+  let roundWon = false;
+  for (let i = 0; i <= 7; i++) {
+    const winCondition = winningConditions[i];
+    let a = gameState[winCondition[0]];
+    let b = gameState[winCondition[1]];
+    let c = gameState[winCondition[2]];
+    if (a === "" || b === "" || c === "") {
+      continue;
+    }
+    if (a === b && b === c) {
+      roundWon = true;
+      break;
+    }
+  }
+
+  if (roundWon) {
+    displayStatus.innerHTML = winningMessage();
+    gameActive = false;
+    return;
+  }
+
+  // Also checking whether there are any cells that haven't been chosen yet
+  let roundDraw = !gameState.includes("");
+  if (roundDraw) {
+    displayStatus.innerHTML = tieMessage();
+    gameActive = false;
+    return;
+  }
+}`,
+    figcaption:
+      "Here my function is checking if there are 3 matches across the board, and if not then it checks for a potential tie",
   },
 ];
