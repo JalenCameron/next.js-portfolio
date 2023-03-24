@@ -105,7 +105,7 @@ export const data = [
   {
     title: "Client Portfolio",
     url: "chef-mcgehee",
-    tools: "Figma · WordPress",
+    tools: "Adobe XD · Sanity",
     description:
       "A portfolio website designed and developed to showcase the clients expertise at cooking.",
     overview:
@@ -113,7 +113,7 @@ export const data = [
     id: "3",
     image: "/assets/coming-soon-mockup.png",
     alt: "A construction photo to show that the current site is still being constructed.",
-    github: "https://github.com/JalenCameron/",
+    github: "https://github.com/Dandazine/ChefWesMcgehee",
     liveSite: "https://chef.jalencameron.com",
     timeline: "N/A",
     roles: "UI Designer · Front-End Developer",
