@@ -105,7 +105,7 @@ export const data = [
   {
     title: "Client Portfolio",
     url: "chef-mcgehee",
-    tools: "Adobe XD · Sanity",
+    tools: "Adobe XD · Tailwind · Next · Sanity",
     description:
       "A portfolio website designed and developed to showcase the clients expertise at cooking.",
     overview:
