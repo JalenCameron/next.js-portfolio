@@ -48,18 +48,22 @@ function About() {
 
           <p className="py-2">
             It wasn&apos;t until 2022 where I really started to take notice of
-            web development and all that it had to offer. With solid
-            fundamentals in various Front-End programming languages such as
-            React and PhP, I&apos;m competent at building dynamic and fully
-            responsive sites. I&apos;m also very capable of creating high
-            quality user-centered designs thanks to my proficiency with such
-            tools as Adobe XD, Figma and Tailwind.
+            front-end development and all that it had to offer. With solid
+            fundamentals in various programming languages such as React and PhP,
+            I&apos;m competent at building dynamic and fully responsive sites.
+            I&apos;m also very capable of creating high quality user-centered
+            designs thanks to my proficiency with such tools as Adobe XD, Figma
+            and Tailwind.
           </p>
 
           <p className="py-2">
-            When I&apos;m not busy with coding or design you can catch me
-            analyzing soccer games, watching anime or playing some sort of
-            physical sport. Oh, and I also know conversational German
+            <span className="text-[#7f96bb]">Currently</span>, I&apos;ve been
+            fortunate to work with an amazing company, where I&apos;ve had the
+            opportunity to flex my collaboration muscles with cross-functional
+            teams, developers, product managers, and other awesome folks.
+            It&apos;s been an incredible journey that has honed my ability to
+            communicate effectively and work hand-in-hand with diverse
+            professionals. Together, we&apos;ve achieved some fantastic results
             <Emoji label="peace-sign" symbol="✌🏽" />
           </p>
         </section>
