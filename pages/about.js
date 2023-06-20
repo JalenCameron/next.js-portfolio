@@ -35,36 +35,30 @@ function About() {
           id="main-content"
         >
           <p className="py-2">
-            My journey into web development actually started when I was quite
-            young. As a kid I used to add and create content on{" "}
-            <em>piczo.com</em> (which for those that are unfamiliar, it was a
-            blogging website that offered a few features similar to what
-            WordPress offers today). This was exciting to me, mostly due to the
-            fact that the possibilities seemed endless when it came to running
-            my own blog/&quot;site&quot;. Unfortunately I fell out of touch with
-            that passion, and passively followed along with the IT world as I
-            continued to grow up.
+            Designing is more than just a job to me, it&apos;s my creative
+            playground. I thrive on teaming up with diverse experts like
+            developers, product managers, and stakeholders, exchanging ideas
+            that breathe life into innovative concepts. With a deep
+            understanding of user-centered design principles, I ensure that
+            every interface I create not only looks great but also seamlessly
+            connects with users, making their journeys effortless and memorable.
           </p>
 
           <p className="py-2">
-            It wasn&apos;t until 2022 where I really started to take notice of
-            front-end development and all that it had to offer. With solid
-            fundamentals in various programming languages such as React and PhP,
-            I&apos;m competent at building dynamic and fully responsive sites.
-            I&apos;m also very capable of creating high quality user-centered
-            designs thanks to my proficiency with such tools as Adobe XD, Figma
-            and Tailwind.
+            Whether it&apos;s wireframing, prototyping, or perfecting pixels, I
+            dive headfirst into every project, obsessing over the tiniest
+            details to create intuitive and delightful user interfaces.
+            <Emoji label="peace-sign" symbol="✌🏽" />
           </p>
 
           <p className="py-2">
             <span className="text-[#7f96bb]">Currently</span>, I&apos;ve been
-            fortunate to work with an amazing company, where I&apos;ve had the
+            fortunate to work with a great company, where I&apos;ve had the
             opportunity to flex my collaboration muscles with cross-functional
             teams, developers, product managers, and other awesome folks.
             It&apos;s been an incredible journey that has honed my ability to
             communicate effectively and work hand-in-hand with diverse
-            professionals. Together, we&apos;ve achieved some fantastic results
-            <Emoji label="peace-sign" symbol="✌🏽" />
+            professionals.
           </p>
         </section>
 
@@ -73,7 +67,7 @@ function About() {
             <h2 className="text-xl">Developer Tools</h2>
             <div>
               <p>HTML5</p>
-              <p>JavaScript</p>
+              <p>JavaScript/jQuery</p>
               <p>PHP</p>
               <p>React.js</p>
               <p>Next.js</p>
@@ -82,10 +76,10 @@ function About() {
 
           <article className="pb-4 text-sm leading-8">
             <h2 className="text-xl">Designer Tools</h2>
-            <p>CSS</p>
-            <p>SASS</p>
-            <p>Adobe XD</p>
+            <p>CSS/SASS</p>
+            <p>Adobe XD/Photoshop/Illustrator</p>
             <p>Figma</p>
+            <p>Sketch</p>
             <p>Tailwind</p>
           </article>
 

@@ -54,19 +54,19 @@ export default function Home() {
                       <div className="carousel-mover relative bottom-[0%]">
                         <div className="h-[50px] w-full">
                           <p className="flex py-4 text-lg uppercase lg:text-2xl">
-                            Front-End Web Developer
-                            <Emoji label="laptop" symbol="💻" />
-                          </p>
-                        </div>
-                        <div className="h-[50px] w-full">
-                          <p className="flex py-4 text-lg uppercase lg:text-2xl">
                             UI/UX Designer <Emoji label="draw" symbol="✍🏽" />
                           </p>
                         </div>
                         <div className="h-[50px] w-full">
                           <p className="flex py-4 text-lg uppercase lg:text-2xl">
-                            Wordpress Wizard
-                            <Emoji label="wizard" symbol="🧙🏽‍♂️" />
+                            Product Designer
+                            <Emoji label="wizard" symbol="📲" />
+                          </p>
+                        </div>
+                        <div className="h-[50px] w-full">
+                          <p className="flex py-4 text-lg uppercase lg:text-2xl">
+                            Front-End Developer
+                            <Emoji label="laptop" symbol="💻" />
                           </p>
                         </div>
                       </div>

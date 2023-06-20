@@ -77,32 +77,32 @@ function Works() {
               variant="scrollable"
             >
               <Tab label="All" {...a11yProps(0)} />
-              <Tab label="Development" {...a11yProps(1)} />
-              <Tab label="Design" {...a11yProps(2)} />
+              <Tab label="Design" {...a11yProps(1)} />
+              <Tab label="Development" {...a11yProps(2)} />
             </Tabs>
           </Box>
 
           {/* The TabPanel acts as a container to hold each project, which I've set up as individual Components */}
           <TabPanel value={value} index={0}>
+            {/* ALL */}
             <Capstone />
             <Nomi />
             <Weather />
             <Chef />
             <MyPortolio />
-            <Trivia />
           </TabPanel>
           <TabPanel value={value} index={1}>
+            {/* DESIGN */}
             <Nomi />
-            <Weather />
-            <Trivia />
             <MyPortolio />
             <Capstone />
+            <Chef />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <MyPortolio />
-            <Nomi />
+            {/* DEVELOPMENT */}
             <Weather />
-            <Chef />
+            <Nomi />
+            <MyPortolio />
           </TabPanel>
         </Box>
       </main>

@@ -14,53 +14,36 @@ export const data = [
     liveSite: "https://nomi.jalencameron.com",
     timeline: "5 Weeks",
     roles: "UI Designer · Developer · Debugger",
-    designParagraph1:
-      "The mockups for this project were created using Adobe Photoshop and XD, keeping a mobile-first approach in mind. I decided to maintain well documented folder groups to show UI changes in response to various user interactions",
-    designParagraph2:
-      "As for the design of this project, I approached it with the idea that I wanted a clean and uncluttered interface that only displays the movie poster at first. Hovering over the poster itself on Desktop would provide some movie information, while clicking on the poster would take you to the individual movie page with additional info.",
-    devParagraph1:
-      "After completion of the high fidelity mockups, my teammates and I split up the workload and decided to begin working on the development of the app itself. Two focused mainly on functionality and two focused on design (fortunately there was still some overlap in between). For this particular assignment I was tasked with styling the App’s UI, but did keep an eye on the development of certain features as well in case of any bugs or errors. ",
+    designBrandParagraph1:
+      "When designing the app I wanted it to have a minimal amount of additional elements and colour to avoid any potential clashes in style with the more colourful posters. The Nomi logo ended up taking heavy inspiration from this ideal as well.",
+    designBrandImage: "/assets/nomi_design-brand-image.svg",
+    designBrandImageAlt: "Nomi Logo",
+    designBrandParagraph2:
+      "In terms of Typography, I carefully chose fonts that enhance the overall aesthetic of my portfolio. For headers, I utilized Inter, a versatile and modern typeface that adds a touch of sophistication and readability to the content. The clean and legible nature of Source Sans Pro promotes effortless reading, allowing visitors to focus on the content itself.",
+    productFeatures1:
+      "For the application my team and I felt that adding user accounts and authentication would greatly improve the UX of the site. With personalized settings, easy access, and added security, users could enjoy a tailored and hassle-free experience. They would be able pick up where they left off, access their preferences on any device, and stay engaged with relevant updates. We believe that this would make the website feel more personalized and convenient, leading to increased satisfaction and loyalty.",
+    productFeaturesImage1: "/assets/nomi_productFeatures1.png",
+    productFeaturesImageAlt: "Sign In CTA",
+    productFeaturesImage2: "/assets/nomi_productFeatures2.png",
+    productFeaturesImageAlt2: "Sign in with Google or GitHub",
+    userInterface1:
+      "One of the things I wanted to add to the movie application was a search bar, which would make it easy to find specific movies, discover new ones, and access content effortlessly. Users would have control over their searches, making the experience personalized and engaging. With a search bar, navigating through a large movie database would be a breeze, ensuring a user-friendly and enjoyable experience.",
+    userInterfaceImage: "/assets/nomi_userInterface.png",
+    userInterfaceImageAlt: "Searching for a movie in the search bar",
+    devFrameworks1:
+      "For this project I worked on a team with a few others to implement my design. After careful consideration, we decided that Next.js would be a great framework for our team to work with. Some of its best features, such as server-side rendering and static site generation, would ensure fast page loads and improved SEO. It's also integrated with React, which allows for building interactive and responsive user interfaces. Additionally, Next.js's scalability and ability to handle large databases make it the perfect fit for a movie database website.",
+    devProblems1:
+      "Initially in my mockups for the website I had a reviews section that would allow users to post reviews of their favourite movies. As this was our first time collaborating on a large project, this unfortunately lead to increased project complexity and a longer anticipated timeline. That was because the implementation process to build a reviews section was quite complex for our skill level and thus resulted in our first experience with scope creep.",
+    devProblems2:
+      "Having been given a certain deadline to meet, we wanted to avoid scope creep wherever possible. We knew it would hamper project efficiency and strain our resources, making it challenging to deliver the project within the defined constraints and objectives. In the end we didn't build this feature, but we learned a valuable lesson in project management.",
+    devProblemsImage: "/assets/nomi_devProblemsImage.png",
+    devProblemsImageAlt: "An Adobe XD mockup for a reviews section for Nomi",
     takeaway1:
-      "This was the first project where I had to work in a team environment and use React.js as the main framework. I was able to see the in’s and out’s of making API calls, as well as using components to provide extra functionality for a better interactive website. Personally, it was quite interesting seeing how the data was fetched for both the movie information and cast list, and then implemented in combination with styling and conditional rendering (e.g., &&).",
+      "This was the first project where I had to work in a team environment and use Next.js as the main framework. I was able to see the in’s and out’s of making API calls, as well as using components to provide extra functionality for a better interactive website. Personally, it was quite interesting seeing how the data was fetched for both the movie information and cast list, and then implemented in combination with styling and conditional rendering (e.g., &&).",
     takeaway2:
       "Communication between the team is also something I would like to highlight. Overall we did a good job discussing issues and how we could better optimize the site, yet we still came across a few merge conflicts and functional issues throughout the process. I think it’s definitely something we could have improved upon over time. It was also good to get used to using GitHub in general, as well as communication platforms such as Slack.",
-    designImage1: "/assets/nomi-folders.png",
-    desAlt1:
-      "The folder structure I used when building a Mockup for my Movie Database in Photoshop",
-    designImage2: "/assets/nomi-hover.png",
-    desAlt2: "Movie List displaying the hover effect I wanted to use",
-    codeblock: ` {/* Banner section with the movie title and basic stats  */}
-    {movie.title && (
-      <section className="hero">
-        <div className="movie-banner">
-          {/* Dark filter on it during tablet/desktop media query  */}
-
-          <Image
-            src={imgPath + "w780/" + movie.backdrop_path}
-            alt={movie.title}
-            width="1920"
-            height="700"
-            objectFit="cover"
-            objectPosition="10% 10%"
-          />
-        </div>
-        <div className="movie-rating">
-          <h1>{movie.title}</h1>
-          <div>
-            <p className="high">
-              {Math.floor(movie.vote_average * 10) / 10}
-            </p>
-            <p>{movie.release_date}</p>
-            {favorites && (
-              <LikeBtn id={id} favList={favorites[0].favorites} />
-            )}
-          </div>
-
-        </div>
-      </section>
-    )}`,
-    figcaption:
-      "For example, understanding what this conditional statement was rendering allowed me to apply appropriate styling (e.g., width & height, where to place the ratings).",
+    codeblock: ``,
+    figcaption: "",
   },
   {
     title: "Weather App",
@@ -77,15 +60,20 @@ export const data = [
     liveSite: "https://weatherapp.jalencameron.com",
     timeline: "1 Week",
     roles: "UI Designer · Front-End Developer",
-    designParagraph1:
-      "My goal for this website was to maintain a simple layout, and utilize Unsplash’s free image library in order to provide backdrops in relation to the current weather. I actually needed a bit more time than I initially anticipated to find images that worked. This was due to how many different sub-categories there are that describe the weather aside from the sun, rain and clouds. I also had to take into account that some images could be distorted due to screen size, so it was a very 'trial and error' type of process.",
-    devParagraph1:
-      "After creating the Movie Database Project I wanted to explore making API calls on my own. This project in particular was inspired by a tutorial I came across, which in turn allowed me to explore new languages. To start, it involved researching some of the terms used and the syntax involved. This helped me to understand what I was writing out, and where I could look for improvements. For instance, I wrote out a conditional statement to change the background depending on which weather icon was displayed, and I also applied those same principles towards error handling when there was no information currently rendered (or it was entered incorrectly).",
+    productFeatures1:
+      "While I didn't put too much focus into the design of this project, I did enjoy some of the features I was able to incorporate into it. One of those features was having the background images update depending on what the current weather is. By providing images that dynamically update based on the current weather, this would add visual appeal and enhance the user experience. I believe that it provides an intuitive and immersive way for users to quickly grasp the current weather conditions at a glance.",
+    productFeaturesImage1: "/assets/weather_productFeatures1.png",
+    productFeaturesImageAlt:
+      "Current Tokyo weather showcasing a cloudy background",
+    productFeaturesImage2: "/assets/weather_productFeatures2.png",
+    productFeaturesImageAlt2:
+      "Current Manchester weather showcasing a sunny background",
+    devFrameworks1:
+      "Having used Next.js in a team environment a few times already, I wanted to try using it on my own. I figured it would be a suitable framework for a weather app due to its server-side rendering capabilities, which  would allow for efficient retrieval and display of real-time weather data. It also works well with API's simplifying the process of fetching and rendering weather data in real time.",
+    devProblems1:
+      "One of my main issues with this project was configuring the Sunrise and Sunset times. To show the correct sunrise and sunset for the user's chosen city, I needed to take into account the city's time zone and do the right conversions. Dealing with the logic and calculations to convert UTC times to the local time zone of each city was tricky and would have needed careful handling to make sure the formatting was accurate and consistent across different places. On top of that, I would've had to subscribe to OpenWeatherMap's API to access the necessary information. In the end I decided the simplest solution was to indicate that the current time was converted to PST, rather than have the user assume the information was incorrect.",
     takeaway1:
       "This was a very fun project to bring to life, and it was also a great way for me to familiarize myself with Next.js and Tailwind. I was able to practice how to access data from props (which was initially a tricky concept for me to grasp, and still could be going forward haha). I actually found out that using Axios to make HTTP requests was more useful than just a regular Fetch API. It was a lot less work writing out .get() or .then(), and there was no need to convert my request to a JSON string either. I was also able to get a handle on the syntax for a new styling framework called Tailwind.",
-    designImage1: "/assets/weather-bg.png",
-    desAlt1:
-      "A dynamic background is generated depending on the Weather Code provided when you search for a city",
     takeawayImage: "/assets/weather-axios.png",
     takeawayAlt: "Making use of axios instead of a regular Fetch API",
     codeblock: `if (weather.weather[0].id >= 200 && weather.weather[0].id <= 232) {
@@ -101,6 +89,8 @@ export const data = [
     }`,
     figcaption:
       "Here is a conditional statement to display a certain background image depending on the weather conditions",
+    codeblockParagraph:
+      "Honestly the main purpose of this project was to explore making API calls on my own. I was inspired by a tutorial I came across, which in turn led me to explore new languages . To start, it involved researching some of the terms used and the syntax involved. This helped me to understand what I was writing out, and where I could look for improvements. For instance, I wrote out a conditional statement to change the background depending on which weather icon was displayed, and I also applied those same principles towards error handling when there was no information currently rendered (or it was entered incorrectly).",
   },
   {
     title: "Client Portfolio",
@@ -117,17 +107,16 @@ export const data = [
     liveSite: "https://chef.jalencameron.com",
     timeline: "N/A",
     roles: "UI Designer · Front-End Developer",
-    designParagraph1:
-      "I started off by researching a variety of cooking sites and popular chef sites. The client also offered suggestions for what they were envisioning (e.g., do not want the site to look cluttered). Taking all of this into account, I was able to maintain a focused and consistent style while designing low-fidelity mockups.",
-    designParagraph2:
-      "After trying a multi-page layout design (and consequently not being satisifed with the results) I swapped to a single page layout because I found that it made navigation easier for the user, which would hopefully minimize the bounce rate. It also makes mobile-friendly development easier too, which was something my team member and I were keen to have in the development stage.",
-    devParagraph1: "Currently in progress.",
-    takeaway1: "Will be updated when site goes live.",
-    designImage1: "/assets/chef-wireframes.png",
-    desAlt1:
-      "A photo displaying multi-page low-fidelity wireframes. Later scrapped for a single page layout.",
-    codeblock: ``,
-    figcaption: "",
+    designBrandParagraph1:
+      "As the designer entrusted with creating a logo for the client, I aimed to create a visually striking and memorable logo that immediately communicates the chef's professionalism and culinary prowess. I wanted the logo to serve as a powerful branding tool, distinguishing the chef from competitors and capturing the attention of their target audience. Through the consistent use of this logo across their website and marketing materials, I sought to create a cohesive and impactful visual identity that resonates with viewers and reinforces their association with the clients exceptional culinary skills.",
+    designBrandImage: "/assets/chef-logo.svg",
+    designBrandImageAlt: "Chef McGehee Logo",
+    productFeatures1: "Will be updated when the project goes live.",
+    userInterface1:
+      "Having consulted the developer for this project, we came to the conclusion that a single page layout would be best applied to the clients portfolio. This was done for a few reasons: it offers simplicity, easy navigation, improved storytelling, mobile-friendly design, enhanced visual impact, quick access to information, time efficiency, and encourages focused presentation. By consolidating all of the content onto a single page, it provides a streamlined and cohesive experience for visitors, allowing for quick browsing, impactful visuals, and a clear narrative flow. By being mobile-friendly it can also save time in maintenance and updates, and ensures only the strongest projects are showcased.",
+    devFrameworks1: "Will be updated when the project goes live.",
+    devProblems1: "Will be updated when the project goes live.",
+    takeaway1: "Will be updated when the project goes live.",
   },
   {
     danial:
@@ -148,31 +137,43 @@ export const data = [
     liveSite: "/",
     timeline: "2 Weeks",
     roles: "Front-End Developer · UI Designer",
-    designParagraph1:
+    designBrandParagraph1:
       "I started off looking up other portfolios to draw inspiration from, which allowed me to make use of InVision’s Mood Board to come up with a style I liked. I then created a style guide to reflect the kinds of standards and consistency I wanted to display across each page of this project. It also helped to serve as a reminder for myself as to the kind of theme I wanted to have.",
-    designParagraph2:
-      "I found it was a lot easier to create a content plan and information architecture to determine what I wanted my portfolio to have. I then followed up with a low-fidelity mockup of my design on Figma, where I focused on a mobile-first approach before moving on to desktop.",
-    devParagraph1:
-      "To make my Works section more manageable, I decided to create a data file that would contain a list of each project's information. I could then call upon that file using a dynamic route to output the content onto my individual projects page. Essentially this will make adding/deleting projects really efficient and convenient whenever I decide to update my portfolio.",
-    devParagraph2:
-      "I also wanted more practice with React components and Tailwind, as I knew these would make things easier for the overall build time of my portfolio. For example, having my Navigation Bar built as a component let me maintain consistency across each page I created on my site. Using Tailwind CSS I could also style every element accordingly within that component, as opposed to attaching a className and adding styles to a stylesheet. ",
+    designBrandImage: "/assets/style-guide.png",
+    designBrandImageAlt:
+      "A section of my style guide, where I determined my primary and secondary colours",
+    designBrandParagraph2:
+      "For instance, by making use of these primary colours I could enhance readability and add a clean and minimalist touch, making the content stand out while creating a modern look. By incorporating my secondary palette I could add a subtle pop of color, bringing vibrancy and highlighting specific areas or elements, thereby creating visual interest and guiding user attention throughout the website. Overall, I think this color scheme combines sophistication, readability, and a touch of creativity to present a visually appealing portfolio.",
+    productFeatures1:
+      "Responsive design is something I always try to incorporate into my designs no matter what project I'm working on. I personally believe it is crucial for providing a great user experience as it ensures that the users website adapts seamlessly to different screen sizes and devices. By optimizing the layout, content, and functionality across desktops, tablets, and mobile devices, responsive design enables users to access and navigate my portfolio with ease, regardless of the device they are using, leading to improved usability, accessibility, and overall satisfaction. That's why I approached this project with a mixture of both low-fidelity and high-fidelity mockups.",
+    productFeaturesImage1: "/assets/low-fidelity.png",
+    productFeaturesImageAlt:
+      "Wireframes for both my desktop and mobile versions of my portfolio",
+    productFeaturesImage2: "/assets/portfolio_productFeatures2.png",
+    productFeaturesImageAlt2: "My mobile high-fidelity mockup of my portfolio",
+    userInterface1:
+      "A nice UI element I would like to highlight is each individual project card. I designed these with the itention that they could provide efficient information and quick project selection while also offering an appealing visual presentation. I wanted to try and capture the users attention while also making a strong first impression, and hopefully fostering a positive user experience in doing so. My expectation is that visitors will quickly scan through multiple projects and make informed decisions about which projects to explore further, ultimately resulting in a streamlined and efficient project selection process.",
+    userInterfaceImage: "/assets/portfolio_userInterface.png",
+    userInterfaceImageAlt: "Two of my project portfolio calling cards",
+    devFrameworks1:
+      "Having already worked with Next.js on a few other projects, I decided it was perfect for my own personal portfolio as well. Going into this project I knew that using Next would be beneficial in the long run, as the framework allows me to load my pages quicker (and it's also much simpler to deploy!). The framework's user-friendly routing system also helps to ensure smooth navigation, making it a cinch for visitors to explore my work. Plus, I can tap into a wide range of components and libraries to level up both the functionality and visual appeal of my portfolio in the future as I continue to gain more experience in both designing and developing.",
+    devProblems1:
+      "One problem I wanted to avoid when building my portfolio was the need to use separate pages for each project. I personally believe that maintaining and updating individual pages would be pretty cumbersome, and also would potentially lead to inconsistencies and outdated information from page to page. Having separate pages can cause slower load times as well, as each page requires a new server request. This could negatively impact the user experience, as navigating between projects would be less fluid, requiring users to wait for page reloads.",
+    devProblems2:
+      "In order to address this concern I built a json file so I could utilize Next's dynamic routing features. This would allow for easier maintenance and scalability, as adding or updating projects could be done dynamically without the need to create new pages. This in turn would provide a smoother user experience by enabling seamless navigation between projects without page reloads. By minimizing these server requests, users will experience faster loading times and improved overall efficiency, something that I'm keen to incorporate into my portfolio.",
+    devProblemsImage: "/assets/data-file.png",
+    devProblemsImageAlt: "A json file containing all of my dynamic information",
     takeaway1:
       "This portfolio was a great way for me to see how far I’ve come in terms of both design and development. As someone who had very little knowledge of website creation in general, it was very satisfying being able to look at what I came up with and say “I know how to build that now.” While I still have room for improvement, overall my journey has been very fulfilling. I’m also grateful for having come up with a style guide, content plan and information architecture, because initially I struggled to decide on how I wanted to represent myself and the work I’ve done but having that structure allowed me to focus more on the work and not backtrack on my decisions.",
     takeaway2:
       "As for the development itself, I really enjoyed trying to figure out dynamic routing and linking that page to the data file I created. It’s something I definitely want to improve on, as I had to look online and get help from my colleagues on the best way to approach it. I've always been one to keep looking for ways to better myself, and this experience has been no different. I hope I can continue to grow and expand my portfolio in the years to come.",
-    designImage1: "/assets/style-guide.png",
-    desAlt1:
-      "A section of my style guide, where I determined my primary and secondary colours",
-    designImage2: "/assets/low-fidelity.png",
-    desAlt2:
-      "A low-fidelity mockup of my portfolio. Based on a Content Plan and Information Architecture.",
-    devImage1: "/assets/data-file.png",
-    devAlt1: "",
-    codeblock2: `<h2 className="border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8 mb-4">
+    codeblock: `<h2 className="border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8 mb-4">
     Get in Touch.
 </h2>`,
     figcaption:
       "Here I'm utilizing Tailwind CSS in the header to generate a left-sided border and proper font-sizing all within the element itself",
+    codeblockParagraph:
+      "I wanted to decrease the build time of my portfolio as well, so I decided to use Tailwind CSS for styling. The best part about Tailwind in my opinion is that it eliminates the need to write custom CSS from scratch, significantly speeding up the styling and layout process. This allowed me to focus more on building functionality and iterating on my mockups rather than spending excessive time on repetitive CSS coding.",
   },
   {
     title: "Summer Panda Cafe",
@@ -189,22 +190,34 @@ export const data = [
     liveSite: "https://summerpandacafe.bcitwebdeveloper.ca/",
     timeline: "4 Weeks",
     roles: "Front-End Developer · Debugger",
-    designParagraph1:
-      "Creation of a content plan was necessary for this project. My team determined each piece of information that would be required on the site, which then led to mapping out the layout of the page using low-fidelity wireframes. We then consulted with the WordPress template hierarchy in order to determine what pages corresponded with the correct template(s)",
-    designParagraph2:
-      "In terms of styling we also employed the Underscores Sass theme, which gave us a lot of extra creativity to work with. Having each section broken down into a sub-folder (e.g., typography, variables, etc.) was very beneficial in the long run when working on a huge site such as this.",
-    devParagraph1:
-      "Due to this website being created with WordPress, we built custom post types and taxonomies, as well as custom fields to allow the site owner to update their content dynamically whenever they needed to. We also configured tax queries and loops to ensure the appropriate content was displayed accurately on each page.",
+    designBrandParagraph1:
+      "When we originally started forming the idea for this project, my team and I wanted to try and encapsulate the joy and indulgence of savoring a good dessert. We believed that by making use of pastel colours and playful drawings it would immerse the user in a blend of flavors and visual delights.",
+    designBrandImage: "/assets/spc_brandImage.png",
+    designBrandImageAlt: "Summer Panda Cafe's pastel colour palette",
+    designBrandParagraph2:
+      "We found that utilizing a font such as Baloo Tammudu 2, which could be seen as playful and expressive (with rounded shapes and friendly curves) made it great for designs that would require a fun and energetic vibe. We coupled this with Roboto, which usually is seen as modern and clean with a balanced and straightforward design that suits a wide range of applications.",
+    productFeatures1:
+      "One of the features we felt we absolutely needed was online ordering. By having this readily available it would provide a seamless and convenient ordering process, allowing customers to effortlessly add their desired desserts to the cart, review their selections, and proceed to checkout. This would allow customers to enjoy the convenience of placing their dessert orders from anywhere whenever they want, saving them valuable time and effort.",
+    productFeaturesImage1: "/assets/spc_productFeatures1.png",
+    productFeaturesImageAlt: "Wireframes of the online ordering menu",
+    productFeaturesImage2: "/assets/spc_productFeatures2.png",
+    productFeaturesImageAlt2:
+      "Wireframe of the popup modal for a more convenient ordering process",
+    userInterface1:
+      "Something my team and I felt we would be important for the cafe was the use of cartoonish drawings for menu items, which could add a playful and whimsical vibe while maintaining a consistent aesthetic across the platform. These unique and stylized representations would help to create a memorable and distinctive brand identity, setting the dessert cafe apart and enhancing its visual appeal.",
+    userInterfaceImage: "/assets/spc_userInterface.png",
+    userInterfaceImageAlt: "Dessert menu cards with cartoonish drawings",
+    devProblems1:
+      "One of the problems my team and I faced while building this project was utilizing the Advanced Custom Fields plugin. This was our first time using a CMS, so we wanted to experiment with a couple of different plugins that were available for use. We felt it could prove valuable for displaying dynamic information that would help the administrator in the future. To be able to use the ACF plugin, it would require careful planning and potentially more customizations to handle complex data structures effectively. In addition to that, determining what fields to build and where to iterate the custom field code was a challenge itself.",
+    devProblems2:
+      "Fortunately we dedicated enough time and effort to reading the documentation provided in the resources section of the plugin, and were able to fully build out some dynamic templates. This can be seen on our Careers page, where the Title, Job Description and Location can all be dynamically generated via the Custom Fields found on the backend of the WordPress site.",
+    devProblemsImage: "/assets/spc_devProblemsImage.png",
+    devProblemsImageAlt:
+      "Screenshot of the Careers page showcasing various Custom Fields",
     takeaway1:
       "Honestly this project allowed me to get hands on experience with project planning and working collaboratively as a web developer. Unlike individual projects, planning became important before prototyping and development began. Knowing how to split up the tasks into small tickets and assigning the person for the right job was the key takeaway for me from this project. We used Asana to manage and monitor the progress and Slack for general communication. Overall, every planned feature was implemented to the expected specification and the project was delivered to the best of our ability.",
     takeaway2:
       "I would also like to highlight that familiarizing myself with WordPress functions and templates was also fairly important. It was great being able to understand PHP and implement it in ways that benefitted the creation of the site, and it really helped flesh out my understanding of JavaScript concepts as well.",
-    designImage1: "/assets/spc-wireframe.png",
-    desAlt1:
-      "A low-fidelity mockup of our Cafe home page, featuring template pages for the appropriate sections",
-    designImage2: "/assets/low-fidelity.png",
-    desAlt2:
-      "Creatively adding pictures and aesthetic colours to each menu category we created",
     codeblock: `<article class="job">
     <?php
     if ( function_exists ( 'get_field' ) ) {
@@ -227,6 +240,8 @@ export const data = [
 </article>`,
     figcaption:
       "For example, in order to display each Job Posting, we first needed to check if a Custom Field was created. If all criteria was met we could then loop through each Job posted and display them in real time.",
+    codeblockParagraph:
+      "Due to this website being created with WordPress, we built custom post types and taxonomies, as well as custom fields to allow the site owner to update their content dynamically whenever they needed to. We also configured tax queries and loops to ensure the appropriate content was displayed accurately on each page.",
   },
   {
     title: "Quizipedia",

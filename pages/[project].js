@@ -161,106 +161,165 @@ function Project(props) {
             >
               <Tab label="Design" {...a11yProps(0)} />
               <Tab label="Development" {...a11yProps(1)} />
-              <Tab label="Takeaways" {...a11yProps(2)} />
+              <Tab label="Insights" {...a11yProps(2)} />
             </Tabs>
           </Box>
 
           {/* INDIVIDUAL CONTAINER FOR DESIGN CONTENT */}
           <TabPanel value={value} index={0}>
-            {/* Design Paragraph 1 */}
-            <p className="py-4">{props.post.designParagraph1}</p>
-
-            {/* IF there is a Design Image in my data.js file, an <Image> tag will render */}
-            {props.post.designImage1 && (
-              <div className="text-center">
-                <Image
-                  src={props.post.designImage1}
-                  alt={props.post.desAlt1}
-                  width={550}
-                  height={400}
-                  className="h-auto max-w-[250px]"
-                />
-              </div>
+            {/* IF there is Branding in my data.js file, a Brand Guidelines section will render */}
+            {props.post.designBrandParagraph1 && (
+              <section>
+                {/* Brand Guidelines */}
+                <h3 className="border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8">
+                  Branding
+                </h3>
+                <p className="py-4">{props.post.designBrandParagraph1}</p>
+                {/* IF there is a brand image in my data.js file, an extra section will render */}
+                {props.post.designBrandImage && (
+                  <div className="text-center">
+                    <Image
+                      src={props.post.designBrandImage}
+                      alt={props.post.designBrandImageAlt}
+                      width={400}
+                      height={200}
+                      className="h-auto max-w-[250px]"
+                    />
+                  </div>
+                )}
+                {/* IF there is more in my data.js file, an extra section will render */}
+                {props.post.designBrandParagraph2 && (
+                  <div>
+                    {/* Brand Content 2 */}
+                    <p className="py-4">{props.post.designBrandParagraph2}</p>
+                  </div>
+                )}
+              </section>
             )}
 
-            {/* IF there is a second Design Paragraph in my data.js file, a <p> tag will render */}
-            {props.post.designParagraph2 && (
-              <p className="py-4">{props.post.designParagraph2}</p>
+            {/* IF there are Product Features in my data.js file, a Product Features section will render */}
+            {props.post.productFeatures1 && (
+              <section>
+                {/* Product Features */}
+                <h3 className="mt-4 border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8">
+                  Product Features
+                </h3>
+                <p className="py-4">{props.post.productFeatures1}</p>
+                {/* IF there are any product feature images, an image tag will render */}
+                {props.post.productFeaturesImage1 && (
+                  <div className="text-center md:flex md:justify-between">
+                    <div className="pb-4">
+                      <Image
+                        src={props.post.productFeaturesImage1}
+                        alt={props.post.productFeaturesImageAlt}
+                        width={350}
+                        height={300}
+                        className=" h-auto max-w-[250px]"
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src={props.post.productFeaturesImage2}
+                        alt={props.post.productFeaturesImageAlt2}
+                        width={350}
+                        height={300}
+                        className=" h-auto max-w-[250px]"
+                      />
+                    </div>
+                  </div>
+                )}
+              </section>
             )}
 
-            {/* IF there is a second Design Image in my data.js file, an <Image> tag will render */}
-            {props.post.designImage2 && (
-              <div className="text-center">
-                <Image
-                  src={props.post.designImage2}
-                  alt={props.post.desAlt2}
-                  width={550}
-                  height={400}
-                  className="h-auto max-w-[250px]"
-                />
-              </div>
+            {/* IF there is UI to talk about in my data.js file, a User Interface section will render */}
+            {props.post.userInterface1 && (
+              <section>
+                {/* Product Features */}
+                <h3 className="mt-8 border-l-4 border-solid border-[#7f96bb] pl-2 text-xl font-bold leading-8">
+                  User Interface
+                </h3>
+                <p className="py-4">{props.post.userInterface1}</p>
+                {/* If there are any UI Images to add, an image tag will render */}
+                {props.post.userInterfaceImage && (
+                  <div className="text-center">
+                    <Image
+                      src={props.post.userInterfaceImage}
+                      alt={props.post.userInterfaceImageAlt}
+                      width={500}
+                      height={300}
+                      className=" h-auto max-w-[250px]"
+                    />
+                  </div>
+                )}
+              </section>
             )}
           </TabPanel>
 
           {/* INDIVIDUAL CONTAINER FOR DEVELOPMENT CONTENT */}
           <TabPanel value={value} index={1}>
-            {/* Developer Paragraph 1 */}
-            <p className="py-4">{props.post.devParagraph1}</p>
-
-            {/* IF there is a Developer Image in my data.js file, an <Image> tag will render */}
-            {props.post.devImage1 && (
-              <div className="text-center">
-                <Image
-                  src={props.post.devImage1}
-                  alt={props.post.devAlt1}
-                  width={550}
-                  height={400}
-                  className="h-auto max-w-[250px]"
-                />
-              </div>
+            {/* IF I want to mention Frameworks in my data.js file, a Frameworks section will render */}
+            {props.post.devFrameworks1 && (
+              <section>
+                {/* Brand Guidelines */}
+                <h3 className="border-l-4 border-solid border-[#7f96bb] pl-2 text-lg font-bold leading-normal">
+                  Frameworks
+                </h3>
+                <p className="py-4">{props.post.devFrameworks1}</p>
+              </section>
             )}
 
             {/* IF there is a Developer Codeblock in my data.js file, a block of code will render */}
             {props.post.codeblock && (
-              <figure>
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={nightOwl}
-                  customStyle={{
-                    borderRadius: "5px",
-                    backgroundColor: "#001E3C",
-                  }}
-                >
-                  {props.post.codeblock}
-                </SyntaxHighlighter>
-                <figcaption className="mx-auto mb-8 max-w-2xl pt-2">
-                  {props.post.figcaption}
-                </figcaption>
-              </figure>
+              <section>
+                {/* Code Snippet */}
+                <h3 className="border-l-4 border-solid border-[#7f96bb] pl-2 text-lg font-bold leading-normal">
+                  Code Snippets
+                </h3>
+                <p className="py-4">{props.post.codeblockParagraph}</p>
+                <figure>
+                  <SyntaxHighlighter
+                    language="javascript"
+                    style={nightOwl}
+                    customStyle={{
+                      borderRadius: "5px",
+                      backgroundColor: "#001E3C",
+                    }}
+                  >
+                    {props.post.codeblock}
+                  </SyntaxHighlighter>
+                  <figcaption className="mx-auto mb-8 max-w-2xl pt-2">
+                    {props.post.figcaption}
+                  </figcaption>
+                </figure>
+              </section>
             )}
 
-            {/* IF there is a second Developer Paragraph in my data.js file, a <p> tag will render */}
-            {props.post.devParagraph2 && (
-              <p className="py-4">{props.post.devParagraph2}</p>
-            )}
+            {/* IF there were Problems I want to discuss in my data.js file, a Problems section will render */}
+            {props.post.devProblems1 && (
+              <section className="mt-4">
+                <h3 className="border-l-4 border-solid border-[#7f96bb] pl-2 text-lg font-bold leading-normal">
+                  Problems &amp; Solutions
+                </h3>
+                <p className="py-4">{props.post.devProblems1}</p>
 
-            {/* IF there is a Developer Codeblock 2 in my data.js file, a block of code will render */}
-            {props.post.codeblock2 && (
-              <figure>
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={nightOwl}
-                  customStyle={{
-                    borderRadius: "5px",
-                    backgroundColor: "#001E3C",
-                  }}
-                >
-                  {props.post.codeblock2}
-                </SyntaxHighlighter>
-                <figcaption className="mx-auto mb-8 max-w-2xl pt-2">
-                  {props.post.figcaption}
-                </figcaption>
-              </figure>
+                {/* IF there are more Problems I want to discuss in my data.js file, a paragraph will render */}
+                {props.post.devProblems2 && (
+                  <p className="py-4">{props.post.devProblems2}</p>
+                )}
+
+                {/* IF there are more Problems I want to discuss in my data.js file, a paragraph will render */}
+                {props.post.devProblemsImage && (
+                  <div className="text-center">
+                    <Image
+                      src={props.post.devProblemsImage}
+                      alt={props.post.devProblemsImageAlt}
+                      width={500}
+                      height={300}
+                      className=" h-auto max-w-[250px]"
+                    />
+                  </div>
+                )}
+              </section>
             )}
           </TabPanel>
 
