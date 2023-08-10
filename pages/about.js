@@ -36,8 +36,8 @@ function About() {
         >
           <p className="py-2">
             Designing is more than just a job to me, it&apos;s my creative
-            playground. I thrive on teaming up with diverse experts like
-            developers, product managers, and stakeholders, exchanging ideas
+            playground. I thrive on teaming up with diverse people like
+            developers, product managers, and stakeholders, and exchanging ideas
             that breathe life into innovative concepts. With a deep
             understanding of user-centered design principles, I ensure that
             every interface I create not only looks great but also seamlessly
@@ -57,8 +57,8 @@ function About() {
             opportunity to flex my collaboration muscles with cross-functional
             teams, developers, product managers, and other awesome folks.
             It&apos;s been an incredible journey that has honed my ability to
-            communicate effectively and work hand-in-hand with diverse
-            professionals.
+            communicate effectively, work hand-in-hand with diverse
+            professionals, and - of course - design and develop major projects.
           </p>
         </section>
 

@@ -19,7 +19,7 @@ export const data = [
     designBrandImage: "/assets/nomi_design-brand-image.svg",
     designBrandImageAlt: "Nomi Logo",
     designBrandParagraph2:
-      "In terms of Typography, I carefully chose fonts that enhance the overall aesthetic of my portfolio. For headers, I utilized Inter, a versatile and modern typeface that adds a touch of sophistication and readability to the content. The clean and legible nature of Source Sans Pro promotes effortless reading, allowing visitors to focus on the content itself.",
+      "In terms of Typography, I carefully chose fonts that enhance the overall aesthetic of the web application. For headers and descriptive text I utilized Inter, a versatile and modern typeface that adds a touch of sophistication and readability to the content. For everything else I went for Source Sans Pro. I find that its clean and legible nature allows visitors to focus on the content itself without drawing their attention elsewhere.",
     productFeatures1:
       "For the application my team and I felt that adding user accounts and authentication would greatly improve the UX of the site. With personalized settings, easy access, and added security, users could enjoy a tailored and hassle-free experience. They would be able pick up where they left off, access their preferences on any device, and stay engaged with relevant updates. We believe that this would make the website feel more personalized and convenient, leading to increased satisfaction and loyalty.",
     productFeaturesImage1: "/assets/nomi_productFeatures1.png",
@@ -31,7 +31,7 @@ export const data = [
     userInterfaceImage: "/assets/nomi_userInterface.png",
     userInterfaceImageAlt: "Searching for a movie in the search bar",
     devFrameworks1:
-      "For this project I worked on a team with a few others to implement my design. After careful consideration, we decided that Next.js would be a great framework for our team to work with. Some of its best features, such as server-side rendering and static site generation, would ensure fast page loads and improved SEO. It's also integrated with React, which allows for building interactive and responsive user interfaces. Additionally, Next.js's scalability and ability to handle large databases make it the perfect fit for a movie database website.",
+      "For this project I worked on a team with a few others to implement my design. After careful consideration, we decided that Next.js would be a great framework for our team to work with. Some of its best features, such as server-side rendering and static site generation, would ensure fast page loads and improved SEO. It's also integrated with React, which allows for building interactive and responsive user interfaces. Additionally, Next.js's scalability and ability to handle large databases made it the perfect fit for a movie database website.",
     devProblems1:
       "Initially in my mockups for the website I had a reviews section that would allow users to post reviews of their favourite movies. As this was our first time collaborating on a large project, this unfortunately lead to increased project complexity and a longer anticipated timeline. That was because the implementation process to build a reviews section was quite complex for our skill level and thus resulted in our first experience with scope creep.",
     devProblems2:
@@ -39,9 +39,9 @@ export const data = [
     devProblemsImage: "/assets/nomi_devProblemsImage.png",
     devProblemsImageAlt: "An Adobe XD mockup for a reviews section for Nomi",
     takeaway1:
-      "This was the first project where I had to work in a team environment and use Next.js as the main framework. I was able to see the in’s and out’s of making API calls, as well as using components to provide extra functionality for a better interactive website. Personally, it was quite interesting seeing how the data was fetched for both the movie information and cast list, and then implemented in combination with styling and conditional rendering (e.g., &&).",
+      "This was my first experience with drafting a mockup and then building a high-fidelity prototype out of it, and it was great to be able to bring my creations to life and see what worked and what didn't. Designing isn't just about making something look 'nice,' it's about trying to give the user a positive experience. By working with both design and development tools I was able to see both sides to this and it really was a fascinating experience.",
     takeaway2:
-      "Communication between the team is also something I would like to highlight. Overall we did a good job discussing issues and how we could better optimize the site, yet we still came across a few merge conflicts and functional issues throughout the process. I think it’s definitely something we could have improved upon over time. It was also good to get used to using GitHub in general, as well as communication platforms such as Slack.",
+      "This was also the first project where I had to work in a team environment and use Next.js as the main framework. I was able to see the in’s and out’s of making API calls, as well as using components to provide extra functionality for a better interactive website. Personally, it was quite interesting seeing how the data was fetched for both the movie information and cast list, and then implemented in combination with styling and conditional rendering (e.g., &&).",
     codeblock: ``,
     figcaption: "",
   },
@@ -61,7 +61,7 @@ export const data = [
     timeline: "1 Week",
     roles: "UI Designer · Front-End Developer",
     productFeatures1:
-      "While I didn't put too much focus into the design of this project, I did enjoy some of the features I was able to incorporate into it. One of those features was having the background images update depending on what the current weather is. By providing images that dynamically update based on the current weather, this would add visual appeal and enhance the user experience. I believe that it provides an intuitive and immersive way for users to quickly grasp the current weather conditions at a glance.",
+      "While I didn't put too much focus into the design of this project, I did enjoy some of the features I was able to incorporate into it. One of those features was having the background images update depending on what the current weather is. By providing images that dynamically update based on the current weather, this would add visual appeal (and hopefully enhance the user's experience). In other words, it provides an intuitive and immersive way for users to quickly grasp the current weather conditions at a glance.",
     productFeaturesImage1: "/assets/weather_productFeatures1.png",
     productFeaturesImageAlt:
       "Current Tokyo weather showcasing a cloudy background",
@@ -69,7 +69,7 @@ export const data = [
     productFeaturesImageAlt2:
       "Current Manchester weather showcasing a sunny background",
     devFrameworks1:
-      "Having used Next.js in a team environment a few times already, I wanted to try using it on my own. I figured it would be a suitable framework for a weather app due to its server-side rendering capabilities, which  would allow for efficient retrieval and display of real-time weather data. It also works well with API's simplifying the process of fetching and rendering weather data in real time.",
+      "Having used Next.js in a team environment a few times already, I wanted to try using it on my own. I figured it would be a suitable framework for a weather app due to its server-side rendering capabilities, which  would allow for efficient retrieval and display of real-time weather data. It also works well with API's, simplifying the process of fetching and rendering weather data in real time.",
     devProblems1:
       "One of my main issues with this project was configuring the Sunrise and Sunset times. To show the correct sunrise and sunset for the user's chosen city, I needed to take into account the city's time zone and do the right conversions. Dealing with the logic and calculations to convert UTC times to the local time zone of each city was tricky and would have needed careful handling to make sure the formatting was accurate and consistent across different places. On top of that, I would've had to subscribe to OpenWeatherMap's API to access the necessary information. In the end I decided the simplest solution was to indicate that the current time was converted to PST, rather than have the user assume the information was incorrect.",
     takeaway1:
@@ -129,7 +129,7 @@ export const data = [
     description:
       "A portfolio website that was designed and developed as a platform to showcase my skills in UI/UX Design and Front-End Web Development.",
     overview:
-      "My portfolio was created with the intention to showcase my work as a developer so far. Utilizing an agile approach, I continuously implemented and revised my designs and updated development features. I took it upon myself to study Next.js (and coupled that with Tailwind CSS) to build this site, with the intention that it would allow for future expansion and greater interactivity.",
+      "My portfolio was created with the intention to showcase my work as a designer and developer so far. Utilizing an agile approach, I continuously implemented and revised my designs and updated development features. I took it upon myself to study Next.js (and coupled that with Tailwind CSS) to build this site, with the intention that it would allow for future expansion and greater interactivity.",
     id: "4",
     image: "/assets/portfolio-mockup.png",
     alt: "Jalen Cameron's Portfolio Project",
@@ -138,21 +138,21 @@ export const data = [
     timeline: "2 Weeks",
     roles: "Front-End Developer · UI Designer",
     designBrandParagraph1:
-      "I started off looking up other portfolios to draw inspiration from, which allowed me to make use of InVision’s Mood Board to come up with a style I liked. I then created a style guide to reflect the kinds of standards and consistency I wanted to display across each page of this project. It also helped to serve as a reminder for myself as to the kind of theme I wanted to have.",
+      "I started off looking up other portfolios to draw inspiration from, and even built out a mood board to come up with a style I liked. I then created a style guide to reflect the kinds of standards and consistency I wanted to display across each page of this project. It also helped to serve as a reminder for myself as to the kind of theme I wanted to have.",
     designBrandImage: "/assets/style-guide.png",
     designBrandImageAlt:
       "A section of my style guide, where I determined my primary and secondary colours",
     designBrandParagraph2:
-      "For instance, by making use of these primary colours I could enhance readability and add a clean and minimalist touch, making the content stand out while creating a modern look. By incorporating my secondary palette I could add a subtle pop of color, bringing vibrancy and highlighting specific areas or elements, thereby creating visual interest and guiding user attention throughout the website. Overall, I think this color scheme combines sophistication, readability, and a touch of creativity to present a visually appealing portfolio.",
+      "For instance, by making use of these primary colours I could add a clean and minimalistic look, making the content stand out. By incorporating my secondary palette I could add a subtle pop of color, bringing vibrancy and highlighting specific areas or elements. Overall I think this helps create a visual interest and can even guide the user's attention throughout the website.",
     productFeatures1:
-      "Responsive design is something I always try to incorporate into my designs no matter what project I'm working on. I personally believe it is crucial for providing a great user experience as it ensures that the users website adapts seamlessly to different screen sizes and devices. By optimizing the layout, content, and functionality across desktops, tablets, and mobile devices, responsive design enables users to access and navigate my portfolio with ease, regardless of the device they are using, leading to improved usability, accessibility, and overall satisfaction. That's why I approached this project with a mixture of both low-fidelity and high-fidelity mockups.",
+      "Responsive design is something I always try to incorporate into my designs no matter what project I'm working on. I personally believe it is crucial for providing a great user experience as it ensures that the users website adapts seamlessly to different screen sizes and devices. By optimizing the layout, content, and functionality across mobile, tablet and desktop devices, I am able to enable users to access and navigate my portfolio with ease, regardless of the device they are using, leading to improved usability, accessibility, and overall satisfaction. That's why I initially approached this project with a mixture of both low-fidelity and high-fidelity mockups.",
     productFeaturesImage1: "/assets/low-fidelity.png",
     productFeaturesImageAlt:
       "Wireframes for both my desktop and mobile versions of my portfolio",
     productFeaturesImage2: "/assets/portfolio_productFeatures2.png",
     productFeaturesImageAlt2: "My mobile high-fidelity mockup of my portfolio",
     userInterface1:
-      "A nice UI element I would like to highlight is each individual project card. I designed these with the itention that they could provide efficient information and quick project selection while also offering an appealing visual presentation. I wanted to try and capture the users attention while also making a strong first impression, and hopefully fostering a positive user experience in doing so. My expectation is that visitors will quickly scan through multiple projects and make informed decisions about which projects to explore further, ultimately resulting in a streamlined and efficient project selection process.",
+      "A nice UI element I would like to highlight is each individual project card. I wanted to try and capture the users attention while also making a strong first impression, and hopefully fostering a positive user experience in doing so. My expectation is that visitors will quickly scan through multiple projects and make informed decisions about which projects to explore further, ultimately resulting in a streamlined and efficient project selection process.",
     userInterfaceImage: "/assets/portfolio_userInterface.png",
     userInterfaceImageAlt: "Two of my project portfolio calling cards",
     devFrameworks1:
@@ -191,13 +191,13 @@ export const data = [
     timeline: "4 Weeks",
     roles: "Front-End Developer · Debugger",
     designBrandParagraph1:
-      "When we originally started forming the idea for this project, my team and I wanted to try and encapsulate the joy and indulgence of savoring a good dessert. We believed that by making use of pastel colours and playful drawings it would immerse the user in a blend of flavors and visual delights.",
+      "When we originally started forming the idea for this project, my team and I wanted to try and encapsulate the joy and indulgence of savoring a good dessert. We believed that by making use of pastel colours and playful drawings it would foster an engaging and memorable experience.",
     designBrandImage: "/assets/spc_brandImage.png",
     designBrandImageAlt: "Summer Panda Cafe's pastel colour palette",
     designBrandParagraph2:
-      "We found that utilizing a font such as Baloo Tammudu 2, which could be seen as playful and expressive (with rounded shapes and friendly curves) made it great for designs that would require a fun and energetic vibe. We coupled this with Roboto, which usually is seen as modern and clean with a balanced and straightforward design that suits a wide range of applications.",
+      "Utilizing a font such as Baloo Tammudu 2 (which could be seen as playful and expressive with its rounded shapes and friendly curves) made it great for designs that would require a fun and energetic vibe. We coupled this with Roboto, which is usually seen as modern and clean with a balanced and straightforward design that suits a wide range of applications.",
     productFeatures1:
-      "One of the features we felt we absolutely needed was online ordering. By having this readily available it would provide a seamless and convenient ordering process, allowing customers to effortlessly add their desired desserts to the cart, review their selections, and proceed to checkout. This would allow customers to enjoy the convenience of placing their dessert orders from anywhere whenever they want, saving them valuable time and effort.",
+      "One of the features we felt we absolutely needed was online ordering. By having this readily available it would provide a seamless and convenient ordering process, providing customers with the chance to add their desired desserts to the cart, review their selections, and proceed to checkout. This would allow customers to enjoy the convenience of placing their dessert orders from anywhere whenever they want, saving them valuable time and effort.",
     productFeaturesImage1: "/assets/spc_productFeatures1.png",
     productFeaturesImageAlt: "Wireframes of the online ordering menu",
     productFeaturesImage2: "/assets/spc_productFeatures2.png",
@@ -215,7 +215,7 @@ export const data = [
     devProblemsImageAlt:
       "Screenshot of the Careers page showcasing various Custom Fields",
     takeaway1:
-      "Honestly this project allowed me to get hands on experience with project planning and working collaboratively as a web developer. Unlike individual projects, planning became important before prototyping and development began. Knowing how to split up the tasks into small tickets and assigning the person for the right job was the key takeaway for me from this project. We used Asana to manage and monitor the progress and Slack for general communication. Overall, every planned feature was implemented to the expected specification and the project was delivered to the best of our ability.",
+      "Honestly this project allowed me to get hands on experience with project planning and working collaboratively as a web designer and developer. Unlike individual projects, planning became important before prototyping and development began. Knowing how to split up the tasks into smaller tickets and assigning the person for the right job was the key takeaway for me from this project. We used Asana to manage and monitor our progress and Slack for general communication. Overall, every planned feature was implemented to the expected specification and the project was delivered to the best of our ability.",
     takeaway2:
       "I would also like to highlight that familiarizing myself with WordPress functions and templates was also fairly important. It was great being able to understand PHP and implement it in ways that benefitted the creation of the site, and it really helped flesh out my understanding of JavaScript concepts as well.",
     codeblock: `<article class="job">
