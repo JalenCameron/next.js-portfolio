@@ -11,7 +11,7 @@ import Nomi from "../components/Nomi";
 import Weather from "../components/Weather";
 import Chef from "../components/Chef";
 import MyPortolio from "../components/MyPortolio";
-import Trivia from "../components/Trivia";
+import Edealer from "../components/Edealer";
 import HeadSEO from "../components/HeadSEO";
 import SkipContent from "../components/SkipContent";
 
@@ -96,6 +96,7 @@ function Works() {
             <Nomi />
             <MyPortolio />
             <Capstone />
+            <Edealer />
             <Chef />
           </TabPanel>
           <TabPanel value={value} index={2}>
@@ -103,6 +104,7 @@ function Works() {
             <Weather />
             <Nomi />
             <MyPortolio />
+            <Edealer />
           </TabPanel>
         </Box>
       </main>

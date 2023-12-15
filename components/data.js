@@ -12,6 +12,7 @@ export const data = [
     alt: "An interactive Movie Database built with Next.js and Sass",
     github: "https://github.com/JedBorseth/movie-database",
     liveSite: "https://nomi.jalencameron.com",
+    mockups: "/assets/xd-mockup.xd",
     timeline: "5 Weeks",
     roles: "UI Designer · Developer · Debugger",
     designBrandParagraph1:
@@ -338,5 +339,40 @@ enum Difficulty {
 }`,
     figcaption:
       "Here my function is checking if there are 3 matches across the board, and if not then it checks for a potential tie",
+  },
+  {
+    title: "EDealer",
+    url: "edealer",
+    tools: "WordPress · PHP · Adobe XD",
+    description:
+      "EDealer is a Toronto-based company specializing in automotive digital marketing solutions. This 'project' is merely used to showcase what I've had the pleasure of working on during my time with this company.",
+    overview:
+      "EDealer is a Toronto-based company specializing in automotive digital marketing solutions. With a focus on driving sales and enhancing customer engagement, EDealer offers a range of services including website design, search engine optimization, social media marketing, and inventory management tools, tailored to meet the unique needs of automotive dealerships in the digital age.",
+    id: "8",
+    image: "/assets/edealer-mockup.png",
+    alt: "Edealer Logo",
+    liveSite: "https://www.edealer.ca/",
+    timeline: "Ongoing",
+    roles: "Junior Web Developer · Debugger",
+    userInterface1:
+      "My job does not involve much design itself, but I did want to highlight its use in my development and implementation process. Whenever I receive a Design mockup I like to ensure that I'm making use of our teams responsive components, which function like adaptive tools and dynamically adjust layouts to suit various devices. This adaptability ensures that the visual and functional aspects remain consistent, whether accessed on a smartphone, tablet, or computer. The benefits of responsive design cannot be understated, especially for a company such as EDealer. By following these designs I am able to enhance usability, reduce friction, and deliver a cohesive experience.",
+    userInterfaceImage: "/assets/edealer_ui.png",
+    userInterfaceImageAlt: "Desktop and Mobile Showroom Components",
+    takeaway1:
+      "Honestly I feel like there isn't much I can say that hasn't already been said before. My key takeaways from my time at this company so far have been the Team Collaboration and User Experience. Working in a tech role within a larger industry involves collaboration with professionals from various domains, such as marketing, sales, and product management. I've been able to enhance my ability to communicate effectively with cross-functional teams thanks to this, as I am constantly dealing with a rotating cast of users and teammates.",
+    takeaway2:
+      "Developing for an industry that targets consumers often emphasizes the importance of user experience, and this company has been no different. Learning to create interfaces that are user-friendly, aesthetically pleasing, and aligned with the brand's image has become a crucial skill for me. Especially in regards to some of the dealership brands, as they have strict guidelines that must be adhered to when dealing with design and development.",
+    codeblock: `// Grabbing the Current URL
+$current_url = "http://$_SERVER[HTTP_HOST]";
+$vancouver = 'www.<dealership-website>.com';
+
+if (strpos($current_url, $vancouver) !== false) {
+    $cta = 'https://<dealership-inventory>.com';
+}
+`,
+    figcaption:
+      "In simpler terms, the code is customizing a Call-To-Action (CTA) URL based on the current URL. If the current URL contains the string associated with Vancouver, it sets a specific URL for the CTA. The code could be expanded to handle other locations as well, each with its own corresponding URL.",
+    codeblockParagraph:
+      "More often than not we build pages that are used globally. This means that more than one site may want to use the same designs (but just have updated content to fit their own sites needs). In this code snippet I've built something that fetches the current URL (by using the $_SERVER[HTTP_HOST] variable), and then running it through 'strpos()' to check if the current URL contains the string specified by the $vancouver variable. If these things align, then that particular link will be applied to the CTA.",
   },
 ];

@@ -4,7 +4,7 @@ import HeadSEO from "../components/HeadSEO";
 import SkipContent from "../components/SkipContent";
 import Nomi from "../components/Nomi";
 import Weather from "../components/Weather";
-import Capstone from "../components/Capstone";
+import Edealer from "../components/Edealer";
 
 export default function Home() {
   const Emoji = (props) => (
@@ -82,7 +82,7 @@ export default function Home() {
             <h2 className="text-center font-bold">Featured Work</h2>
             <Nomi />
             <Weather />
-            <Capstone />
+            <Edealer />
           </section>
         </main>
       </div>

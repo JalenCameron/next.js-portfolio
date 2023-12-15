@@ -99,23 +99,40 @@ function Project(props) {
         </div>
 
         {/* PROJECT LINKS */}
-        <section className="mx-auto flex w-72 justify-evenly" id="main-content">
-          <Link href={props.post.github}>
-            <a
-              target="_blank"
-              className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
-            >
-              GitHub
-            </a>
-          </Link>
-          <Link href={props.post.liveSite}>
-            <a
-              target="_blank"
-              className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
-            >
-              Live Site
-            </a>
-          </Link>
+        <section
+          className="work-ctas mx-auto flex w-80 justify-evenly"
+          id="main-content"
+        >
+          {props.post.github && (
+            <Link href={props.post.github}>
+              <a
+                target="_blank"
+                className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
+              >
+                GitHub
+              </a>
+            </Link>
+          )}
+          {props.post.liveSite && (
+            <Link href={props.post.liveSite}>
+              <a
+                target="_blank"
+                className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
+              >
+                Live Site
+              </a>
+            </Link>
+          )}
+          {props.post.mockups && (
+            <Link href={props.post.mockups}>
+              <a
+                target="_blank"
+                className="border-2 border-solid border-[#7f96bb] border-opacity-70 px-4 py-2 hover:bg-[#7f96bb] hover:text-[#f1f3f4]"
+              >
+                Designs
+              </a>
+            </Link>
+          )}
         </section>
 
         {/* PROJECT OVERVIEW */}
