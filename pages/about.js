@@ -76,7 +76,7 @@ function About() {
 
           <article className="pb-4 text-sm leading-8">
             <h2 className="text-xl">Designer Tools</h2>
-            <p>CSS/SASS</p>
+            <p>CSS/Sass</p>
             <p>Adobe XD/Photoshop/Illustrator</p>
             <p>Figma</p>
             <p>Sketch</p>
